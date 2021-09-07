@@ -1,8 +1,47 @@
-.img-pelis-home{
+.img-pelis-home {
     width: 300px;
     margin: 30px;
 }
 
-.display-pelis{
-display: flex;
+.display-pelis {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+.nav-footer {
+    display: flex;
+    list-style: none;
+    padding-left: 44%;
+    margin-bottom: 50px;
+}
+
+.li-footer {
+    padding-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+footer {
+    background-color: cornflowerblue;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nombre-footer {
+    margin-left: 650px;
 }
