@@ -1,3 +1,11 @@
+/* i general */
+
+* {box-sizing: border-box;}
+a {text-decoration: none;}
+
+/* f general */
+
+
 .img-pelis-home {
     width: 300px;
     margin: 30px;
@@ -7,6 +15,13 @@
     display: flex;
 }
 
+<<<<<<< HEAD
+=======
+
+
+/* i footer */
+
+>>>>>>> e8ec61ca5395236c2608c2224710f8a4411f846d
 .nav-footer {
     display: flex;
     list-style: none;
@@ -37,3 +52,5 @@ footer {
 .nombre-footer {
     margin-left: 650px;
 }
+
+/* f footer */
