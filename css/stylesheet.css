@@ -2,21 +2,73 @@
 
 * {box-sizing: border-box;}
 a {text-decoration: none;}
+main ul  {list-style: none;}
+body {
+    background-color:#171718;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
 
 /* f general */
 
+/* i header */
 
-.img-pelis-home {
-    width: 300px;
-    margin: 30px;
+
+.header h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #2ECC71;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 70px;
+    align-self: center;
+    vertical-align: text-top;
+}
+
+#logo {
+    border-radius: 160px;
+    display: block;
+    max-width: 100%;
+    width: 140px;
+}
+
+
+/* f header */
+
+main h2 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+    font-size: 30px;
 }
 
 .display-pelis {
     display: flex;
 }
 
+.item-pelis {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-pelis h3 {
+    text-align: center;
+}
+
+.img-pelis-home {
+    width: 300px;
+    margin: 30px;
+}
+
 .display-series {
     display: flex;
+}
+
+.item-series {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .img-series {
@@ -25,8 +77,9 @@ a {text-decoration: none;}
     margin: 30px;
 }
 
-
-
+.item-series h3 {
+    text-align: center;
+}
 
 /* i footer */
 
