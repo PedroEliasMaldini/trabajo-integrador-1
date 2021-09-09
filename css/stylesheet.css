@@ -1,4 +1,4 @@
-/* i general */
+/*********** i general ***********/
 
 * {box-sizing: border-box;}
 a {text-decoration: none;}
@@ -9,10 +9,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* f general */
+/************ f general *********/
 
-/* i header */
-
+/**********+ i header ********/
 
 .header h1 {
     font-family: 'Bebas Neue', cursive;
@@ -31,9 +30,50 @@ body {
     width: 140px;
 }
 
+/******** f header ********/
 
-/* f header */
+/******* i footer ********/
 
+.nav-footer {
+    display: flex;
+    list-style: none;
+    padding-left: 44%;
+    margin-bottom: 50px;
+}
+
+.li-footer {
+    padding-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+footer {
+    background-color: cornflowerblue;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nombre-footer {
+    margin-left: 650px;
+}
+
+.logo-footer {
+    border-radius: 160px;
+    display: block;
+    max-width: 100%;
+    width: 90px;
+}
+
+/********* f footer *********/
+/******* i index main ********/
 main h2 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1.5px;
@@ -126,41 +166,45 @@ main h2 {
     text-align: center;
 }
 
-/* i footer */
+/******* f index main ********/
 
+/****** i detail-series ******/
 
-
-.nav-footer {
+.detail {
+    width: 100%;
+    background-color: #2ECC71;
     display: flex;
-    list-style: none;
-    padding-left: 44%;
-    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 5% 0px 5%;
+    }
+    
+.detail-img {   
+    display: block;
+    width: 300px;
+    height: 450px;
+    margin: 10px;
 }
 
-.li-footer {
-    padding-right: 30px;
-    text-decoration: none;
+.detail-text {
+    font-size: 15px;
     font-weight: bold;
-
-
+    font-family: 'Roboto', sans-serif;
 }
 
-a {
-    text-decoration: none;
+.detail-text h2 {
+    font-family: 'Bebas Neue', cursive;
     color: black;
-   
+    letter-spacing: 1.5px;
+    font-size: 60px;
 }
 
-footer {
-    background-color: cornflowerblue;
-    margin-left: 5%;
-    margin-right: 5%;
+.detail-text span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 1.5px;
 }
 
-.nombre-footer {
-    margin-left: 650px;
-}
+/****** f detail-series ******/
 
-/* f footer */
-
-/* detail section*/
+/******* detail section*******/
