@@ -17,9 +17,9 @@ body {
 .header h1 {
     font-family: 'Bebas Neue', cursive;
     color: #2ECC71;
-    letter-spacing: 5px;
+    letter-spacing: 15px;
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
     align-self: center;
     vertical-align: text-top;
 }
@@ -37,11 +37,19 @@ body {
 main h2 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1.5px;
-    font-size: 30px;
+    font-size: 60px;
 }
-
+.pelis-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .display-pelis {
     display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
 }
 
 .item-pelis {
@@ -49,6 +57,14 @@ main h2 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    background-color: #2ecc70cc;;
+    border-radius: 3%;
+    margin: 1%;
+}
+
+.item-pelis:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.6s;
 }
 
 .item-pelis h3 {
@@ -56,12 +72,34 @@ main h2 {
 }
 
 .img-pelis-home {
-    width: 300px;
-    margin: 30px;
+   width: 300px;
+   height: 450px;
+   margin: 10px;
+}
+
+.details {
+    width: 40 px;
+    height: 20px;
+    background-color: whitesmoke;
+    color:#2ecc70cc;
+    text-align: center;
+    font-weight: bold;
+    margin: 3%;
+    border-radius: 3%;
+    align-items: center;
+}
+
+.series-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .display-series {
     display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
 }
 
 .item-series {
@@ -69,12 +107,19 @@ main h2 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    background-color: #2ecc70cc;
+    border-radius: 3%;
+    margin: 1%;
 }
 
+.item-series:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.6s;
+}
 .img-series {
     width: 300px;
     height: 450px;
-    margin: 30px;
+    margin: 10px;
 }
 
 .item-series h3 {
@@ -117,3 +162,5 @@ footer {
 }
 
 /* f footer */
+
+/* detail section*/
