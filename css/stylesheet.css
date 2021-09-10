@@ -29,7 +29,7 @@ img {
 
 /**********+ i header ********/
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,8 +71,8 @@ color: whitesmoke;
 
 h1 {
     font-family: 'Bebas Neue', cursive;
-    color: #171718;
-    letter-spacing: 3px;
+    color: whitesmoke;
+    letter-spacing: 10px;
     text-align: left;
     font-size: 90px;
     align-self: center;
@@ -142,6 +142,8 @@ main h2 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1.5px;
     font-size: 60px;
+    color: #2ECC70;
+    padding: 50px 10%;
 }
 
 .pelis-container {
@@ -175,6 +177,7 @@ main h2 {
 
 .item-pelis h3 {
     text-align: center;
+    color: whitesmoke;
 }
 
 .img-pelis-home {
@@ -187,7 +190,7 @@ main h2 {
     width: 200px;
     height: 20px;
     font-weight: bolder;
-    color: #2ECC71;
+    color: #2ecc70cc;
     text-align: center;
     font-weight: bold;
     margin-left: 70px;
