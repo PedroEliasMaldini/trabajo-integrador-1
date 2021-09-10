@@ -55,7 +55,7 @@ div{
 
 .nav-header a{
     color: white;
-    background-color: green;
+    background-color: #2ECC71;
     padding: 15px;
     border-radius: 30%;
     border: 5px;
@@ -142,7 +142,7 @@ main h2 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    background-color: #2ecc70cc;;
+    background-color: #2ecc70cc;
     border-radius: 3%;
     margin: 1%;
 }
@@ -163,19 +163,18 @@ main h2 {
 }
 
 .details {
-    width: 40 px;
-    height: 20px;
+    width: 200px;
+    height: 25px;
     font-weight: bolder;
-    color:black;
-    text-align: center;
+    color: #2ECC71;
+    text-align:center;
     font-weight: bold;
     margin-left: 70px;
     margin-right: 70px;
-    border-radius: 50% 50% 0% 0;
-    
+    border-radius: 50% 50% 0% 0;   
     align-items: center;
     flex-wrap: wrap;
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
 
 }
 
