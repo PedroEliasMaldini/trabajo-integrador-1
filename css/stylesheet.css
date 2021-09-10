@@ -1,15 +1,25 @@
 /*********** i general ***********/
 
-* {box-sizing: border-box;}
-a {text-decoration: none;}
-main ul  {list-style: none;}
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+main ul {
+    list-style: none;
+}
+
 body {
-    background-color:#171718;
+    background-color: #171718;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
-    
+
 }
-img{
+
+img {
     max-width: 100%;
 }
 
@@ -17,7 +27,7 @@ img{
 
 /**********+ i header ********/
 
- h1 {
+h1 {
     font-family: 'Bebas Neue', cursive;
     color: #2ECC71;
     letter-spacing: 15px;
@@ -29,7 +39,7 @@ img{
     justify-content: center;
 }
 
-div{
+div {
     display: flex;
     flex-wrap: wrap;
 }
@@ -41,19 +51,19 @@ div{
     width: 140px;
 }
 
-.nav-header{
+.nav-header {
     display: flex;
     justify-content: center;
     padding: 0 70px;
     margin-top: 0;
 }
 
-.nav-header li{
-    padding:  0 20px;
+.nav-header li {
+    padding: 0 20px;
     list-style: none;
 }
 
-.nav-header a{
+.nav-header a {
     color: white;
     background-color: #2ECC71;
     padding: 15px;
@@ -70,12 +80,12 @@ div{
     list-style: none;
     justify-content: center;
     margin-bottom: 50px;
-    
+
 
 }
 
 .li-footer {
-    
+
     text-decoration: none;
     border-right: grey solid;
     padding: 0 70px;
@@ -88,20 +98,20 @@ div{
     color: white;
     padding: 20px;
     font-weight: bold;
-  
-    
-   
+
+
+
 }
 
 footer {
-    
+
     margin-left: 5%;
     margin-right: 5%;
     border-right: none;
     border-bottom: none;
     border-left: none;
-    border-top:grey solid;
-    
+    border-top: grey solid;
+
 }
 
 .nombre-footer {
@@ -122,16 +132,18 @@ main h2 {
     letter-spacing: 1.5px;
     font-size: 60px;
 }
+
 .pelis-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .display-pelis {
     display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
@@ -155,9 +167,9 @@ main h2 {
 }
 
 .img-pelis-home {
-   width: 300px;
-   height: 450px;
-   margin: 10px;
+    width: 300px;
+    height: 450px;
+    margin: 10px;
 }
 
 .details {
@@ -165,11 +177,11 @@ main h2 {
     height: 25px;
     font-weight: bolder;
     color: #2ECC71;
-    text-align:center;
+    text-align: center;
     font-weight: bold;
     margin-left: 70px;
     margin-right: 70px;
-    border-radius: 50% 50% 0% 0;   
+    border-radius: 50% 50% 0% 0;
     align-items: center;
     flex-wrap: wrap;
     background-color: whitesmoke;
@@ -186,7 +198,7 @@ main h2 {
 .display-series {
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-around;
+    justify-content: space-around;
 }
 
 .item-series {
@@ -203,6 +215,7 @@ main h2 {
     transform: translateY(-10px);
     transition: all ease 0.6s;
 }
+
 .img-series {
     width: 300px;
     height: 450px;
@@ -218,25 +231,28 @@ main h2 {
 /****** i detail-series ******/
 
 .detail {
-    width: 100%;
+    max-width: 100%;
     background-color: #2ECC71;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 50px 5% 0px 5%;
-    }
-    
-.detail-img {   
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.detail-img {
+    display: flex;
     width: 300px;
     height: 450px;
     margin: 10px;
+    
 }
 
 .detail-text {
     font-size: 15px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    
 }
 
 .detail-text h2 {
@@ -268,8 +284,8 @@ main h2 {
 }
 
 .favoritos:hover {
-    box-shadow: inset 100px 0 0 0  black;
-    cursor: pointer; 
+    box-shadow: inset 100px 0 0 0 black;
+    cursor: pointer;
     color: whitesmoke;
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
