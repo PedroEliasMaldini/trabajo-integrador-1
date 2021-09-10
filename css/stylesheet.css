@@ -7,6 +7,10 @@ body {
     background-color:#171718;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
+    
+}
+img{
+    max-width: 100%;
 }
 
 /************ f general *********/
@@ -25,9 +29,31 @@ body {
 
 #logo {
     border-radius: 160px;
-    display: block;
+    display: flex;
     max-width: 100%;
     width: 140px;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: end;
+    padding: 0 70px;
+    margin-top: 0;
+}
+
+.nav-header li{
+    padding:  0 20px;
+    list-style: none;
+}
+
+.nav-header a{
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border-radius: 30%;
+    border: 5px;
+
+
 }
 
 /******** f header ********/
@@ -37,28 +63,40 @@ body {
 .nav-footer {
     display: flex;
     list-style: none;
-    padding-left: 44%;
+    justify-content: center;
     margin-bottom: 50px;
+    
+
 }
 
 .li-footer {
-    padding-right: 30px;
+    
     text-decoration: none;
-    font-weight: bold;
+    border-right: grey solid;
+    padding: 0 70px;
 
 
 }
 
-a {
+.nav-footer a {
     text-decoration: none;
-    color: black;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+  
+    
    
 }
 
 footer {
-    background-color: cornflowerblue;
+    
     margin-left: 5%;
     margin-right: 5%;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-top:grey solid;
+    
 }
 
 .nombre-footer {
@@ -120,13 +158,18 @@ main h2 {
 .details {
     width: 40 px;
     height: 20px;
-    background-color: whitesmoke;
-    color:#2ecc70cc;
+    font-weight: bolder;
+    color:black;
     text-align: center;
     font-weight: bold;
-    margin: 3%;
-    border-radius: 3%;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 50% 50% 0% 0;
+    
     align-items: center;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+
 }
 
 .series-container {
