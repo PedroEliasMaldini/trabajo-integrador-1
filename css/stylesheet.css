@@ -44,11 +44,10 @@ font-family: 'Bebas Neue', cursive;
 letter-spacing: 3px;
 }
 
-#logo {
-    cursor:pointer;
-    width: 110px;
+.logo
+{
+    width: 90px;
 }
-
 .nav-header {
     list-style: none;
 }
@@ -166,22 +165,24 @@ footer {
 
 h1 {
     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 10px;
+    font-size: 95px;
+   text-shadow: 3px 3px 3px #2bb162;
+    padding-top: 3%;
+    text-align: center;
     color: whitesmoke;
-    letter-spacing: 5px;
-    text-align: left;
-    font-size: 10px;
-    align-self: center;
-    vertical-align: text-top;
-    justify-content: center;
 }
 
 main h2 {
     font-family: 'Bebas Neue', cursive;
-    letter-spacing: 1.5px;
-    font-size: 60px;
-    color: #2ECC70;
-    padding: 50px 10%;
-}
+    letter-spacing: 10px;
+    font-size: 40px;
+    color:#2bb162;
+    margin: 40px 15%;
+    border-top: solid 2px whitesmoke;
+    border-bottom: solid 2px whitesmoke;
+}    
+ 
 
 .pelis-container {
     display: flex;
@@ -228,12 +229,11 @@ main h2 {
     font-weight: bolder;
     color: #171718;
     font-size: 20px;
-    text-align: center;
     background-color: whitesmoke;
     width: 20px;
     height: 20px;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 5px;
     text-align: center;
 }
 
