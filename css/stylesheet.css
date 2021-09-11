@@ -102,6 +102,7 @@ color: whitesmoke;
 
 .nav-header li a {
     color: whitesmoke;
+    font-weight: bold;
     background-color:black; 
     padding: 13px;
     border-radius: 10px;
@@ -211,7 +212,7 @@ main h2 {
     flex-direction: column;
     justify-content: center;
     background-color: #2ecc70cc;
-    border-radius: 3%;
+    border-radius: 10px;
     margin: 1%;
 }
 
@@ -223,6 +224,8 @@ main h2 {
 .item-pelis h3 {
     text-align: center;
     color: whitesmoke;
+    font-size: 23px;
+    padding: 3%;
 }
 
 .img-pelis-home {
@@ -232,19 +235,14 @@ main h2 {
 }
 
 .details {
-    width: 200px;
-    height: 20px;
     font-weight: bolder;
-    color: #2ecc70cc;
+    color: whitesmoke;
+    margin: auto;
+    font-size: 22px;
     text-align: center;
-    font-weight: bold;
-    margin-left: 70px;
-    margin-right: 70px;
-    border-radius: 50% 50% 0% 0;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-
+    background-color: #171718;
+    border-radius: 50%;
+    width: 27px;
 }
 
 .series-container {
@@ -283,6 +281,9 @@ main h2 {
 
 .item-series h3 {
     text-align: center;
+    color: whitesmoke;
+    font-size: 23px;
+    padding: 3%;
 }
 
 /******* f index main ********/
