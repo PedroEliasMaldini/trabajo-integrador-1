@@ -29,61 +29,19 @@ img {
 
 /**********+ i header ********/
 
-
-.search-box{
-    position:absolut;
-    transform: translate(-50%,-50%);
-    background: #020202;
-    height: 50px;
-    border-radius: 40px;
-    padding: 10px;
-    margin-top: 30px;
-}
-
-.search-box:hover> .search-txt{
-    width: 240px;
-    padding: 0 6px;
-}
-
-
-.search-btn{
-float: right;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-background:  #020202;
-display: flex;
-justify-content: center;
-padding-top: 5px;
-
-
-}
-
-.search-txt{
-    border:none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 30px;
-    width: 240px;
-}
-
-
-
 .header {
     display: flex;
+    flex: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #2ECC70;
 }
 
 .header li, a {
-font-size: 16px;
+font-size: 15px;
 color: whitesmoke;
+font-family: 'Bebas Neue', cursive;
+letter-spacing: 3px;
 }
 
 #logo {
@@ -103,7 +61,7 @@ color: whitesmoke;
 .nav-header li a {
     color: whitesmoke;
     font-weight: bold;
-    background-color:black; 
+    background-color: #171718; 
     padding: 13px;
     border-radius: 10px;
     border: 5px;
@@ -115,17 +73,45 @@ color: whitesmoke;
     color: black;
 }
 
-h1 {
-    font-family: 'Bebas Neue', cursive;
-    color: whitesmoke;
-    letter-spacing: 10px;
-    text-align: left;
-    font-size: 90px;
-    align-self: center;
-    vertical-align: text-top;
-    justify-content: center;
+.search-box{
+    position:absolut;
+    transform: translate(-50%,-50%);
+    background: #020202;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 45px;
 }
 
+.search-box:hover> .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+
+.search-btn{
+float: right;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background:  #020202;
+display: flex;
+justify-content: center;
+padding-top: 5px;
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 240px;
+}
 
 /******** f header ********/
 
@@ -136,12 +122,9 @@ h1 {
     list-style: none;
     justify-content: center;
     margin-bottom: 50px;
-
-
 }
 
 .li-footer {
-
     text-decoration: none;
     border-right: grey solid;
     padding: 0 70px;
@@ -180,6 +163,18 @@ footer {
 
 /********* f footer *********/
 /******* i index main ********/
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-align: left;
+    font-size: 10px;
+    align-self: center;
+    vertical-align: text-top;
+    justify-content: center;
+}
+
 main h2 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1.5px;
@@ -199,7 +194,6 @@ main h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .item-pelis {
@@ -220,25 +214,27 @@ main h2 {
 .item-pelis h3 {
     text-align: center;
     color: whitesmoke;
-    font-size: 23px;
+    font-size: 20px;
     padding: 3%;
 }
 
 .img-pelis-home {
-    width: 300px;
-    height: 450px;
+    width: 220px;
+    height: 320px;
     margin: 10px;
 }
 
 .details {
     font-weight: bolder;
-    color: whitesmoke;
-    margin: auto;
-    font-size: 22px;
+    color: #171718;
+    font-size: 20px;
     text-align: center;
-    background-color: #171718;
+    background-color: whitesmoke;
+    width: 20px;
+    height: 20px;
+    margin: auto;
     border-radius: 50%;
-    width: 27px;
+    text-align: center;
 }
 
 .series-container {
@@ -270,15 +266,15 @@ main h2 {
 }
 
 .img-series {
-    width: 300px;
-    height: 450px;
+    width: 220px;
+    height: 320px;
     margin: 10px;
 }
 
 .item-series h3 {
     text-align: center;
     color: whitesmoke;
-    font-size: 23px;
+    font-size: 20px;
     padding: 3%;
 }
 
