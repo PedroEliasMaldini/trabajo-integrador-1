@@ -123,7 +123,6 @@ h1 {
     font-size: 90px;
     align-self: center;
     vertical-align: text-top;
-    
     justify-content: center;
 }
 
@@ -147,32 +146,29 @@ h1 {
     border-right: grey solid;
     padding: 0 70px;
 
-
 }
 
 .nav-footer a {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     padding: 20px;
     font-weight: bold;
-
-
-
 }
 
 footer {
-
     margin-left: 5%;
     margin-right: 5%;
     border-right: none;
     border-bottom: none;
     border-left: none;
     border-top: grey solid;
-
 }
 
 .nombre-footer {
     margin-left: 650px;
+    color: grey solid;
+    text-align:right;
+    font-size: 15px;
 }
 
 .logo-footer {
@@ -288,38 +284,38 @@ main h2 {
 
 /******* f index main ********/
 
-/****** i detail-series ******/
+/****** i detail-series y pelis ******/
 
 .detail {
     max-width: 100%;
-    background-color: #2ECC71;
+    background-color: grey solid;
     padding: 50px 5% 0px 5%;
     display: flex;
     flex-wrap: wrap;
 }
 
-
 .detail-img {
-    display: flex;
-    width: 300px;
+    width: 300px 40%;
     height: 450px;
-    margin: 10px;
-    
+    padding: 5%;
 }
 
 .detail-text {
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
     display: flex;
-    
+    flex: wrap;
+    flex-direction: column;
+    width: 55%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .detail-text h2 {
     font-family: 'Bebas Neue', cursive;
-    color: black;
+    color: #2ECC70;
     letter-spacing: 1.5px;
     font-size: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 .detail-text span {
@@ -332,25 +328,24 @@ main h2 {
     width: 100px;
     height: 25px;
     border: none;
-    color: black;
+    color: #2bb162;
     background-color: whitesmoke;
     border-radius: 4px;
-    box-shadow: inset 0 0 0 0 black;
+    box-shadow: inset 0 0 0 0 #2ECC70;
     transition: ease-out 0.3s;
     font-size: 20px;
-    outline: none;
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
 }
 
 .favoritos:hover {
-    box-shadow: inset 100px 0 0 0 black;
+    box-shadow: inset 100px 0 0 0 #2ECC70;
     cursor: pointer;
-    color: whitesmoke;
+    color: black;
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
 }
 
-/****** f detail-series ******/
+/****** f detail-series y pelis ******/
 
 /******* detail section*******/
