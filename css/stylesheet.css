@@ -165,7 +165,7 @@ footer {
 
 h1 {
     font-family: 'Bebas Neue', cursive;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     font-size: 95px;
    text-shadow: 3px 3px 3px #2bb162;
     padding-top: 3%;
@@ -180,50 +180,8 @@ main h2 {
     color:#2bb162;
     margin: 40px 15%;
     border-top: solid 2px whitesmoke;
-    border-bottom: solid 2px whitesmoke;
+    border-bottom: solid 2px  whitesmoke;
 }    
- 
-
-.pelis-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.display-pelis {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.item-pelis {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #2ecc70cc;
-    border-radius: 10px;
-    margin: 1%;
-}
-
-.item-pelis:hover {
-    transform: translateY(-10px);
-    transition: all ease 0.6s;
-}
-
-.item-pelis h3 {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 20px;
-    padding: 3%;
-}
-
-.img-pelis-home {
-    width: 220px;
-    height: 320px;
-    margin: 10px;
-}
 
 .details {
     font-weight: bolder;
@@ -237,20 +195,20 @@ main h2 {
     text-align: center;
 }
 
-.series-container {
+.watch-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.display-series {
+.watch-display {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.item-series {
+.watch-item {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -260,18 +218,18 @@ main h2 {
     margin: 1%;
 }
 
-.item-series:hover {
+.watch-item:hover {
     transform: translateY(-10px);
     transition: all ease 0.6s;
 }
 
-.img-series {
+.watch-img {
     width: 220px;
     height: 320px;
     margin: 10px;
 }
 
-.item-series h3 {
+.watch-item h3 {
     text-align: center;
     color: whitesmoke;
     font-size: 20px;
