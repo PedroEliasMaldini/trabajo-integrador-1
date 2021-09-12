@@ -247,9 +247,11 @@ main h2 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     background-color: #2ecc70cc;
     border-radius: 3%;
-    margin: 1%;
+    margin: 2%;
+    padding: 5px;
 }
 .watch-item:hover {
     transform: translateY(-10px);
@@ -321,9 +323,11 @@ main h2 {
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
         background-color: #2ecc70cc;
         border-radius: 3%;
         margin: 1%;
+        padding: 5px;
     }
     
     .watch-item:hover {
