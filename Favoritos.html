@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles de peliculas</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
@@ -24,9 +26,11 @@
                 <li><a href="detail-movie.html">Peliculas</a> </li>
                 <li><a href="detail-serie.html">Series</a> </li>
                 <li><a href="Favoritos.html">Favoritos</a></li>
-
             </ul>
         </nav>
+        <div>
+            <img src="img/menu-img/movie-night-menu-blackback (1).png" alt="menu" class="menu">
+        </div>
         <form>
             <div class="search-box">
                 <input class="search-txt" type="text" name="" placeholder="Buscar">
@@ -38,7 +42,30 @@
 
     </header>
 
-    <main></main>
+    <main>
+        <div>
+            <h2 class="titulo-fav">Mis Favoritos</h2>
+        </div>
+        <section>
+            <article class="mis-fav">
+                <ul>
+                    <li class="watch-item">
+                        <img src="img/populares/movie2-black-widow.png" alt="Black Widow cartelera" class="watch-img">
+                        <h3>Black Widow</h3>
+                        <a href="detail-movie.html" class="details">+</a>
+                    <li class="watch-item">
+                        <img src="img/series/breaking-bad.jpg" alt="breaking-bad" class="watch-img">
+                        <h3>Breaking Bad</h3>
+                        <a href="detail-movie.html" class="details">+</a>
+                        <li class="watch-item">
+                            <img src="img/populares/movie5-cruella.jpg" alt="Cruella cartelera" class="watch-img">
+                            <h3>Cruella</h3>
+                            <a href="detail-movie.html" class="details">+</a>
+                        </li>
+                </ul>
+            </article>
+        </section>
+    </main>
 
     <footer>
 
@@ -63,8 +90,6 @@
         <p class="nombre-footer">
             copyright &copy; Martina Arnaude, Pedro Elias Maldini y Mariano Mendelsohn
         </p>
+        </div>
     </footer>
-
 </body>
-
-</html>

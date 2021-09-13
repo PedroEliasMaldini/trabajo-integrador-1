@@ -506,3 +506,28 @@ h1 {
 /****** f detail-series y pelis ******/
 
 /******* detail section*******/
+
+
+/* simulado de favoritos ***/
+
+.mis-fav ul{
+    display: flex;
+    
+}
+
+.mis-fav{
+    margin-bottom: 200px;
+}
+
+.titulo-fav{
+
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 70px;
+    color: #2bb162;
+    margin: 5%;
+    text-align: start;
+    border-bottom: solid 2px whitesmoke;
+
+}
+
