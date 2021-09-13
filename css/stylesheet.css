@@ -531,3 +531,27 @@ h1 {
 
 }
 
+
+@media (max-width: 500px) {
+    .nav-footer{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        border-top: white solid;
+    }
+    .nav-footer li{
+        list-style: none;
+        padding: 20px;
+        color: white;
+        
+
+    }
+    .nav-footer a{
+        color: white;
+        
+    }
+}
+
+
+
+
