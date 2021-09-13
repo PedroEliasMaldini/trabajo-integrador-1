@@ -532,7 +532,7 @@ h1 {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 1400px) {
     .nav-footer{
         display: flex;
         max-width: 100%;
@@ -543,11 +543,12 @@ h1 {
         list-style: none;
         padding: 20px;
         color: white;
-        
+        border-right: white;
 
     }
     .nav-footer a{
         color: white;
+        
         
     }
 }
