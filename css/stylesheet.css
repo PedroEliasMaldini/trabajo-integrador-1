@@ -553,6 +553,59 @@ h1 {
     }
 }
 
+/**** Pag.Generos ****/
 
+   .generos {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
 
+  .genres { 
+    background-color: #2bb162;
+    margin: 15px;
+    padding: 10px 60px 10px 60px;
+    font-size: larger;
+    border-radius: 10px;
+    }
 
+    .genres:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.6s;
+   }
+  .genres-s {
+    background-color: #2bb162;
+    margin: 15px 15px 100px 15px;
+    font-size: larger;
+    padding: 10px 60px 10px 60px;
+    border-radius: 10px;
+  }
+
+  .genres-s:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.6s;
+  }
+
+/**** Pag. Detalles de generos ****/
+
+.detalles-g {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-generos {
+    margin-left: 4%;
+    margin-bottom: 5%;
+    max-width: 15%;
+    border: 5px;
+}
+
+.titulo-g {
+    background-color: #2bb162;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.peliculas-dispo {
+    color: yellow;
+}
