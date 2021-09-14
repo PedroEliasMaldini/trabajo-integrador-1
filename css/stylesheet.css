@@ -586,8 +586,31 @@ h1 {
     transition: all ease 0.6s;
   }
 
-/**** Pag. Detalles de generos ****/
+/****  generos ****/
 
+@media (min-width: 768px){
+
+    .titulo-g a {
+        color: white;
+        
+    }
+
+    .d-generos p{
+
+        font-size: 13.5px;
+    }
+    .hache2-genres{
+
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        font-size: 70px;
+        color: #2bb162;
+        margin: 5%;
+        text-align: start;
+        border-bottom: solid 2px whitesmoke;
+    }
+}
+@media (min-width: 1024px){
 .detalles-g {
     display: flex;
     flex-wrap: wrap;
@@ -608,4 +631,59 @@ h1 {
 
 .peliculas-dispo {
     color: yellow;
+}
+.hache2-genres{
+
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 70px;
+    color: #2bb162;
+    margin: 5%;
+    text-align: start;
+    border-bottom: solid 2px whitesmoke;
+}
+
+}
+
+.hache2-genres{
+
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: #2bb162;
+    margin: 5%;
+    text-align: start;
+    border-bottom: solid 2px whitesmoke;
+}
+
+.titulo-g{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-g  a{
+    color: white;
+    border-radius: 10px ;
+    background-color: #2bb162;
+    padding: 5px 15px;
+
+}
+
+.d-generos p{
+    font-size: 12.5px;
+    margin: 15px 10px;
+}
+
+.peliculas-dispo{
+    margin-left: 30px;
+    color: yellow;
+}
+
+/**** detalles de generos ***/
+
+.nav-detail-genres {
+
+    display: flex;
+    margin-left: 130px;
+    margin-bottom: 130px ;
 }
