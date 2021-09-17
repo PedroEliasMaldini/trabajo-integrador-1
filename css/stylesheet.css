@@ -34,7 +34,6 @@ img {
     justify-content: space-between;
     align-items: center;
     background-color: #2ECC70;
-
 }
 
 /*mobile header */
@@ -222,14 +221,9 @@ h1 {
 }
 
 .details {
-    font-weight: bolder;
-    color: #171718;
-    font-size: 11px;
-    background-color: whitesmoke;
-    width: 14px;
+    color: #171718;    
     margin: auto;
-    border-radius: 10px;
-    text-align: center;
+    padding: 2%;
 }
 
 .watch-container {
@@ -253,8 +247,8 @@ h1 {
     align-content: center;
     background-color: #2ecc70cc;
     border-radius: 3%;
-    margin: 2%;
     padding: 5px;
+    width: 48%;
 }
 
 .watch-item:hover {
@@ -263,9 +257,7 @@ h1 {
 }
 
 .watch-img {
-    width: 100px;
-    height: 150px;
-    margin: 3%;
+    width: 100%;
 }
 
 .watch-item h3 {
@@ -273,6 +265,9 @@ h1 {
     color: whitesmoke;
     font-size: 8px;
     padding: 3%;
+    border-bottom: solid 2px whitesmoke;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /*computer index*/
@@ -329,9 +324,7 @@ h1 {
     }
 
     .watch-img {
-        width: 220px;
-        height: 320px;
-        margin: 10px;
+        width: 100%;
     }
 
     .watch-item h3 {
@@ -342,14 +335,8 @@ h1 {
     }
 
     .details {
-        font-weight: bolder;
-        color: #171718;
-        font-size: 15px;
-        background-color: whitesmoke;
+        color: white;    
         margin: auto;
-        width: 20px;
-        border-radius: 48%;
-        text-align: center;
         padding: 2%;
     }
 }
