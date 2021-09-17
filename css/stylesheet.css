@@ -22,6 +22,7 @@ body {
 
 img {
     max-width: 100%;
+    
 }
 
 /************ f general *********/
@@ -209,6 +210,10 @@ h1 {
     color: whitesmoke;
 }
 
+.watch-item a {
+    color: white;
+}
+
 .index-main h2 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
@@ -231,12 +236,15 @@ h1 {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    
 }
 
 .watch-display {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+    
 }
 
 .watch-item {
@@ -248,7 +256,8 @@ h1 {
     background-color: #2ecc70cc;
     border-radius: 3%;
     padding: 5px;
-    width: 48%;
+    width: 43%;
+    margin: 10px;
 }
 
 .watch-item:hover {
@@ -309,13 +318,13 @@ h1 {
     .watch-item {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        width: 15%;
         justify-content: center;
-        align-content: center;
+        flex-direction: column;
         background-color: #2ecc70cc;
         border-radius: 3%;
         margin: 2%;
-        padding: 5px;
+        padding: 13.5px;
     }
 
     .watch-item:hover {
