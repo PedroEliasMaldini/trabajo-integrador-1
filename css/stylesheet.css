@@ -344,12 +344,13 @@ h1 {
     .details {
         font-weight: bolder;
         color: #171718;
-        font-size: 11px;
+        font-size: 15px;
         background-color: whitesmoke;
-        width: 14px;
         margin: auto;
-        border-radius: 10px;
+        width: 20px;
+        border-radius: 48%;
         text-align: center;
+        padding: 2%;
     }
 }
 
