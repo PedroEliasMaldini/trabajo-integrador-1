@@ -715,6 +715,9 @@ h1 {
 
 /******* i search-results ********/
 
+.error-search-results {
+    display: none;
+}
 
 .error-notfound {
     margin: 50px;
