@@ -226,13 +226,11 @@ h1 {
 }
 
 
-
 .watch-container {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    
 }
 
 .watch-display {
@@ -244,12 +242,12 @@ h1 {
 .watch-item {
     display: block;
     background-color: #2bb162;
-    width: 18%;
     padding: 10px;
     border-radius: 5px;
     align-items: center;
     text-align: center;
     margin: 10px;
+    width: 40%;
  }
 
 
@@ -258,7 +256,11 @@ h1 {
     transition: all ease 0.6s;
 }
 
-.watch-item{
+.watch-img {
+    width: 40%;
+}
+
+.watch-img img {
     width: 100%;
 }
 
