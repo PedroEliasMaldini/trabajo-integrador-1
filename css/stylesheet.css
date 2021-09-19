@@ -223,7 +223,7 @@ h1 {
     letter-spacing: 5px;
     font-size: 20px;
     color: #2bb162;
-    margin: 5%;
+    margin: 25px;
     text-align: center;
     border-top: solid 2px whitesmoke;
     border-bottom: solid 2px whitesmoke;
@@ -240,13 +240,13 @@ h1 {
 .watch-display {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .watch-item {
     display: block;
     background-color: #2bb162;
-    padding: 10px;
+    padding-top: 7px;
     border-radius: 5px;
     align-items: center;
     text-align: center;
@@ -261,86 +261,55 @@ h1 {
 }
 
 .watch-img {
-    width: 40%;
+    width: 90%;
+    margin: auto;
 }
 
 .watch-img img {
     width: 100%;
 }
 
-
 .watch-item h3 {
     text-align: center;
     color: whitesmoke;
     font-size: 10px;
+    border-bottom: solid 2px whitesmoke;
+    padding-bottom: 2px;
+}
+
+.details {
+    font-size: 12px;
 }
 
 /*computer index*/
 @media(min-width: 1024px) {
     h1 {
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 15px;
         font-size: 100px;
-        text-shadow: 3px 3px 3px #2bb162;
-        padding-top: 3%;
-        text-align: center;
-        color: whitesmoke;
     }
-
+ 
     .index-main h2 {
-        font-family: 'Bebas Neue', cursive;
         letter-spacing: 10px;
         font-size: 40px;
-        color: #2bb162;
-        margin: 3%;
-        text-align: center;
-        border-top: solid 2px whitesmoke;
+    }
+ 
+    .watch-item {
+        width: 200px;
+        height: 340px;
+        padding: 10px;
+    }
+    
+    .watch-img {
+        width: 100%;
+    }
+    
+    .watch-item h3 {
+        font-size: 15px;
         border-bottom: solid 2px whitesmoke;
     }
 
-    .watch-container {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .watch-display {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .watch-item {
-        display: block;
-        background-color: #2bb162;
-        width: 200px;
-        height: 350px;
-        padding: 10px;
-        border-radius: 5px;
-        align-items: center;
-        text-align: center;
-    }
-
     .details {
-        color: white;
-    }
-}
-
-.watch-item:hover {
-    transform: translateY(-10px);
-    transition: all ease 0.6s;
-}
-
-.watch-img {
-    width: 100%;
-}
-
-.watch-item h3 {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 15px;
-    border-bottom: solid 2px whitesmoke;
+        font-size: 15px;
+    }    
 }
 
 
@@ -701,9 +670,10 @@ h1 {
 }
 
 .peliculas-dispo {
-    margin-left: 30px;
-    color: yellow;
+    font-size: 12px;
+    color: rgb(231, 231, 104);
 }
+
 
 /**** detalles de generos ***/
 
@@ -721,7 +691,8 @@ h1 {
     width: 200px;
     height: 330px;
 }
- /* en caso de no encontrar la busqueda */
+
+/* en caso de no encontrar la busqueda */
 .error-search-results {
     display: none;
 }
