@@ -507,6 +507,7 @@ h1 {
 
 /******** i favoritos ********/
 
+/*celular y tablet favoritos*/
 .titulo-fav {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
@@ -550,7 +551,7 @@ h1 {
     font-weight: bolder;
 }
 
-
+/*computer favoritos*/
 @media (min-width: 1024px) {
 
     .titulo-fav {
