@@ -715,6 +715,13 @@ h1 {
 
 /******* i search-results ********/
 
+/*en caso de si encpntrar la bsuqueda */
+.found-search-results .watch-display .watch-item {
+    background-color: #33c770;
+    width: 200px;
+    height: 330px;
+}
+ /* en caso de no encontrar la busqueda */
 .error-search-results {
     display: none;
 }
@@ -753,7 +760,7 @@ h1 {
     }
 
 
-    .recomendaciones .watch-display .watch-item {
+    .error-search-results .recomendaciones .watch-display .watch-item {
         background-color: #2bb162;
         width: 200px;
         height: 330px;
