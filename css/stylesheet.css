@@ -347,18 +347,19 @@ h1 {
     max-width: 100%;
     background-color: grey solid;
     padding: 50px 5% 0px 5%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: block;
+    margin-bottom: 50px;
 }
 
 .detail-img {
-    width: 180px;
-    height: 240px;
-    padding: 5%;
-    margin-left: 25%;
-    margin-right: 20%;
-} /*fijarse si encontramos otra forma de centrarla */
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+} 
+
+.detail-img img {
+    width: 100%;
+}
 
 .detail-text {
     display: flex;
@@ -418,27 +419,30 @@ h1 {
 /* tablet y computer detail-series y pelis*/
 @media(min-width: 768px) {
     .detail {
-        max-width: 100%;
         background-color: grey solid;
-        padding: 50px 5% 0px 5%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .detail-img {
-        width: 300px;
-        height: 450px;
-        padding: 5%;
-        margin:0;
-    }
-
-    .detail-text {
         display: flex;
         flex: wrap;
-        flex-direction: column;
         justify-content: space-around;
-        width: 55%;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+
+    
+    .detail-img {
+        width: 30%;
+        padding: 5px;
+        margin: auto;
+    } 
+      
+    .detail-img img {
+        width: 100%;
+    }
+
+
+    .detail-text {
+        display: block;
+        width: 60%;
         font-size: 15px;
         font-family: 'Roboto', sans-serif;
     }
