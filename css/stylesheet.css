@@ -22,7 +22,7 @@ body {
 
 img {
     max-width: 100%;
-    
+
 }
 
 /************ f general *********/
@@ -62,8 +62,9 @@ img {
     }
 
     .buttons-responsive {
-        color:white;
+        color: white;
     }
+
     .header li,
     a {
         font-size: 15px;
@@ -251,7 +252,7 @@ h1 {
     text-align: center;
     margin: 10px;
     width: 40%;
- }
+}
 
 
 .watch-item:hover {
@@ -311,40 +312,41 @@ h1 {
     }
 
     .watch-item {
-       display: block;
-       background-color: #2bb162;
-       width: 200px;
-       height: 350px;
-       padding: 10px;
-       border-radius: 5px;
-       align-items: center;
-       text-align: center;
+        display: block;
+        background-color: #2bb162;
+        width: 200px;
+        height: 350px;
+        padding: 10px;
+        border-radius: 5px;
+        align-items: center;
+        text-align: center;
     }
 
-    .details i{
-        color: white;       
+    .details {
+        color: white;
     }
 }
 
-    .watch-item:hover {
-        transform: translateY(-10px);
-        transition: all ease 0.6s;
-    }
+.watch-item:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.6s;
+}
 
-    .watch-img {
-        width: 100%;
-    }
+.watch-img {
+    width: 100%;
+}
 
-    .watch-item h3 {
-        text-align: center;
-        color: whitesmoke;
-        font-size: 15px;
-        border-bottom: solid 2px whitesmoke;
-    }
+.watch-item h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 15px;
+    border-bottom: solid 2px whitesmoke;
+}
 
-    
+
 
 /******* f index main ********/
+
 
 /****** i detail-series y pelis ******/
 /* mobile detail-series y pelis*/
@@ -360,7 +362,7 @@ h1 {
     width: 50%;
     padding: 5px;
     margin: auto;
-} 
+}
 
 .detail-img img {
     width: 100%;
@@ -375,7 +377,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.detail-text a{
+.detail-text a {
     font-size: 10px;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
@@ -421,6 +423,7 @@ h1 {
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
 }
+
 /* tablet y computer detail-series y pelis*/
 @media(min-width: 768px) {
     .detail {
@@ -432,13 +435,13 @@ h1 {
         font-family: 'Roboto', sans-serif;
     }
 
-    
+
     .detail-img {
         width: 30%;
         padding: 5px;
         margin: auto;
-    } 
-      
+    }
+
     .detail-img img {
         width: 100%;
     }
@@ -451,7 +454,7 @@ h1 {
         font-family: 'Roboto', sans-serif;
     }
 
-    .detail-text a{
+    .detail-text a {
         font-size: 15px;
         color: whitesmoke;
         font-family: 'Roboto', sans-serif;
@@ -502,98 +505,124 @@ h1 {
 /******* detail section*******/
 
 
-/* simulado de favoritos ***/
+/******** i favoritos ********/
 
-.mis-fav ul{
-    display: flex;
-    
-}
-
-.mis-fav{
-    margin-bottom: 200px;
-}
-
-.titulo-fav{
-
+.titulo-fav {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
-    font-size: 70px;
+    font-size: 50px;
     color: #2bb162;
-    margin: 5%;
+    margin: 10px;
     text-align: start;
     border-bottom: solid 2px whitesmoke;
 
 }
 
-
-@media (max-width: 1400px) {
-    .nav-footer{
-        display: flex;
-        max-width: 100%;
-        justify-content: center;
-        border-top: white solid;
-    }
-    .nav-footer li{
-        list-style: none;
-        padding: 20px;
-        color: white;
-        border-right: white;
-
-    }
-    .nav-footer a{
-        color: white;
-        
-        
-    }
+.mis-fav {
+    margin-bottom: 200px;
 }
+
+.mis-fav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.watch-item-fav {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    background-color: whitesmoke;
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+.watch-item-fav h3 a {
+    color:black;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+@media (min-width: 1024px) {
+
+    .titulo-fav {
+        font-size: 70px;
+    }
+
+    .watch-item-fav {
+        width: 200px;
+        height: 320px;
+    }
+
+  
+    .watch-item-fav h3 a {
+        color:black;
+        font-size: 15px;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+}
+
+/******** f favoritos ********/
 
 /**** Pag.Generos ****/
 
-   .generos {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-around;
-   }
+.generos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-  .genres { 
+.genres {
     background-color: #2bb162;
     margin: 15px;
     padding: 10px 60px 10px 60px;
     font-size: larger;
     border-radius: 10px;
-    }
+}
 
-    .genres:hover {
+.genres:hover {
     transform: translateY(-10px);
     transition: all ease 0.6s;
-   }
-  .genres-s {
+}
+
+.genres-s {
     background-color: #2bb162;
     margin: 15px 15px 100px 15px;
     font-size: larger;
     padding: 10px 60px 10px 60px;
     border-radius: 10px;
-  }
+}
 
-  .genres-s:hover {
+.genres-s:hover {
     transform: translateY(-10px);
     transition: all ease 0.6s;
-  }
+}
 
 /****  generos ****/
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
     .titulo-g a {
         color: white;
-        
+
     }
 
-    .d-generos p{
+    .d-generos p {
 
         font-size: 13.5px;
     }
-    .hache2-genres{
+
+    .hache2-genres {
 
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 5px;
@@ -604,42 +633,44 @@ h1 {
         border-bottom: solid 2px whitesmoke;
     }
 }
-@media (min-width: 1024px){
-.detalles-g {
-    display: flex;
-    flex-wrap: wrap;
+
+@media (min-width: 1024px) {
+    .detalles-g {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .d-generos {
+        margin-left: 4%;
+        margin-bottom: 5%;
+        max-width: 15%;
+        border: 5px;
+    }
+
+    .titulo-g {
+        background-color: #2bb162;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .peliculas-dispo {
+        color: yellow;
+    }
+
+    .hache2-genres {
+
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        font-size: 70px;
+        color: #2bb162;
+        margin: 5%;
+        text-align: start;
+        border-bottom: solid 2px whitesmoke;
+    }
+
 }
 
-.d-generos {
-    margin-left: 4%;
-    margin-bottom: 5%;
-    max-width: 15%;
-    border: 5px;
-}
-
-.titulo-g {
-    background-color: #2bb162;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.peliculas-dispo {
-    color: yellow;
-}
-.hache2-genres{
-
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
-    font-size: 70px;
-    color: #2bb162;
-    margin: 5%;
-    text-align: start;
-    border-bottom: solid 2px whitesmoke;
-}
-
-}
-
-.hache2-genres{
+.hache2-genres {
 
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
@@ -650,25 +681,25 @@ h1 {
     border-bottom: solid 2px whitesmoke;
 }
 
-.titulo-g{
+.titulo-g {
     display: flex;
     justify-content: center;
 }
 
-.titulo-g  a{
+.titulo-g a {
     color: white;
-    border-radius: 10px ;
+    border-radius: 10px;
     background-color: #2bb162;
     padding: 5px 15px;
 
 }
 
-.d-generos p{
+.d-generos p {
     font-size: 12.5px;
     margin: 15px 10px;
 }
 
-.peliculas-dispo{
+.peliculas-dispo {
     margin-left: 30px;
     color: yellow;
 }
@@ -679,5 +710,5 @@ h1 {
 
     display: flex;
     margin-left: 130px;
-    margin-bottom: 130px ;
+    margin-bottom: 130px;
 }
