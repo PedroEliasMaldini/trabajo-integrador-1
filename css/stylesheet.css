@@ -47,20 +47,27 @@ img {
     display: none;
 }
 
-.menu {
-    width: 40px;
-    border-radius: 50%;
-}
-
 .search-box {
     display: none;
 }
 
+.buttons-responsive-menu {
+font-size: 25px;
+color: black;
+}
+
+.buttons-responsive-search {
+    font-size: 25px;
+    margin-left: 2px;
+    color: black;
+    }
 /*computer header */
 @media(min-width:1024px) {
-    .menu {
-        display: none;
-    }
+   
+.buttons-responsive-menu, .buttons-responsive-search {
+    display: none;
+}
+
 
     .buttons-responsive {
         color: white;
