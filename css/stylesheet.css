@@ -104,12 +104,7 @@ h1 {
 }
 
 
-.watch-container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
+
 
 .watch-display {
     display: flex;
@@ -333,6 +328,10 @@ h1 {
 .d-generos p {
     font-size: 12.5px;
     margin: 15px 10px;
+}
+
+.d-generos {
+    display: block;
 }
 
 .peliculas-dispo {
