@@ -400,7 +400,6 @@ h1 {
 
     /**** detail movie y series ****/
     .detail {
-        background-color: grey solid;
         display: flex;
         justify-content: space-around;
         font-size: 15px;
@@ -661,6 +660,11 @@ h1 {
         background: #171718;
         display: block;
         margin: auto;
+    }
+
+    .search-box:hover>.search-txt {
+        width: 200px;
+        padding: 0 6px;
     }
 
     .search-txt {
