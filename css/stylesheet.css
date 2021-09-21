@@ -104,12 +104,7 @@ h1 {
 }
 
 
-.watch-container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
+
 
 .watch-display {
     display: flex;
@@ -642,10 +637,6 @@ h1 {
         margin-top: 45px;
     }
 
-    .search-box:hover>.search-txt {
-        width: 200px;
-        padding: 0 6px;
-    }
 
     .search-btn {
         width: 20px;
