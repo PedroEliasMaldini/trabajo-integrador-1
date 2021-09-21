@@ -329,6 +329,10 @@ h1 {
     margin: 15px 10px;
 }
 
+.d-generos {
+    display: block;
+}
+
 .peliculas-dispo {
     font-size: 12px;
     color: rgb(231, 231, 104);
