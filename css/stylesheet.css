@@ -67,25 +67,26 @@ img {
 }
 
 .nav-footer li{
-    padding: 20px;
-    list-style: none;   
+    padding: 20px;  
     color: white;
-    border-top: solid  white;
+    list-style: none;
+    
     
 
 }
 
 .nav-footer li a{
     color: white;
+    font-style: none;
 }
 
 .nombre-footer {
     margin-left: 10%;
     color: grey solid;
-    text-align: right;
+    text-align: end;
     font-size: 10px;
-    border-top: solid 2px grey;
-    margin-top: 10%;
+   
+    
 }
 
 
@@ -509,13 +510,12 @@ h1 {
     /**** footer *******/
     .nav-footer {
         display: flex;
-        list-style: none;
+        margin-top: 50px;
         justify-content: center;
-        margin-bottom: 50px;
+       
     }
 
     .li-footer {
-        text-decoration: none;
         border-right: grey solid;
         padding: 0 70px;
 
@@ -538,9 +538,9 @@ h1 {
     }
 
     .nombre-footer {
-        margin-left: 650px;
+       text-align: end;
         font-size: 15px;
-        border-top: none;
+       border-top: none;
     }
 
     /***** index *****/
