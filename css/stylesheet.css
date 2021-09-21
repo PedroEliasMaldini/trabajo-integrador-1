@@ -63,7 +63,20 @@ img {
 /*****footer *****/
 
 .nav-footer {
-    display: none;
+    display: flex;
+}
+
+.nav-footer li{
+    padding: 20px;
+    list-style: none;   
+    color: white;
+    border-top: solid  white;
+    
+
+}
+
+.nav-footer li a{
+    color: white;
 }
 
 .nombre-footer {
@@ -474,7 +487,7 @@ h1 {
     }
 
     .nav-header li {
-        display: inline-block;
+
         padding: 0px 20px;
     }
 
