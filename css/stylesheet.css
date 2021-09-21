@@ -63,7 +63,20 @@ img {
 /*****footer *****/
 
 .nav-footer {
-    display: none;
+    display: flex;
+}
+
+.nav-footer li{
+    padding: 20px;
+    list-style: none;   
+    color: white;
+    border-top: solid  white;
+    
+
+}
+
+.nav-footer li a{
+    color: white;
 }
 
 .nombre-footer {
@@ -108,7 +121,7 @@ h1 {
 
 .watch-display {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -117,7 +130,6 @@ h1 {
     background-color: #2bb162;
     padding-top: 7px;
     border-radius: 5px;
-    align-items: center;
     text-align: center;
     margin: 10px;
     width: 40%;
@@ -330,6 +342,10 @@ h1 {
     margin: 15px 10px;
 }
 
+.d-generos {
+    display: block;
+}
+
 .peliculas-dispo {
     font-size: 12px;
     color: rgb(231, 231, 104);
@@ -471,7 +487,7 @@ h1 {
     }
 
     .nav-header li {
-        display: inline-block;
+
         padding: 0px 20px;
     }
 
