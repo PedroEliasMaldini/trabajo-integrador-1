@@ -28,11 +28,10 @@ img {
 
 /************ f general *********/
 
-/**********+ i header ********/
 /* responsive mobile first */
+/**********+ i header ********/
 .header {
     display: flex;
-    flex: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #2ECC70;
@@ -61,93 +60,6 @@ color: black;
     margin-left: 2px;
     color: black;
     }
-/*computer header */
-@media(min-width:1024px) {
-   
-.buttons-responsive-menu, .buttons-responsive-search {
-    display: none;
-}
-
-
-    .buttons-responsive {
-        color: white;
-    }
-
-    .header li,
-    a {
-        font-size: 15px;
-        color: whitesmoke;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-    }
-
-    .nav-header {
-        list-style: none;
-        display: flex;
-    }
-
-    .nav-header li {
-        display: inline-block;
-        padding: 0px 20px;
-    }
-
-    .nav-header li a {
-        color: whitesmoke;
-        font-weight: bold;
-        background-color: #171718;
-        padding: 13px;
-        border-radius: 10px;
-        border: 5px;
-        box-shadow: inset 0 0 0 0 whitesmoke;
-    }
-
-    .nav-header li a:hover {
-        box-shadow: inset 150px 0 0 0 whitesmoke;
-        color: black;
-    }
-}
-
-@media(min-width:1170px) {
-    .search-box {
-        display: flex;
-        position: absolut;
-        transform: translate(-50%, -50%);
-        background: #171718;
-        height: 50px;
-        border-radius: 40px;
-        padding: 10px;
-        margin-top: 45px;
-    }
-
-    .search-box:hover>.search-txt {
-        width: 240px;
-        padding: 0 6px;
-    }
-
-    .search-btn {
-        float: right;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #171718;
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
-    }
-
-    .search-txt {
-        border: none;
-        background: none;
-        outline: none;
-        float: left;
-        padding: 0;
-        color: white;
-        font-size: 16px;
-        transition: 0.4s;
-        line-height: 30px;
-        width: 240px;
-    }
-}
 
 /******** f header ********/
 
@@ -747,3 +659,92 @@ h1 {
 }
 
 /******* i search-results ********/
+
+/******resonsive *********/
+
+
+
+@media(min-width:1024px) {
+   /***** header *******/
+    .buttons-responsive-menu {
+        display: none;
+    }
+    
+        .buttons-responsive {
+            color: white;
+        }
+    
+        .header li,
+        a {
+            font-size: 15px;
+            color: whitesmoke;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 3px;
+        }
+    
+        .nav-header {
+            list-style: none;
+            display: flex;
+        }
+    
+        .nav-header li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+    
+        .nav-header li a {
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: #171718;
+            padding: 13px;
+            border-radius: 10px;
+            border: 5px;
+            box-shadow: inset 0 0 0 0 whitesmoke;
+        }
+    
+        .nav-header li a:hover {
+            box-shadow: inset 150px 0 0 0 whitesmoke;
+            color: black;
+        }
+    
+         /**** header *******/
+    }
+    
+/* especial- el searchbox del header */
+    @media(min-width:1175px) {
+        .search-box {
+            display: flex;
+            transform: translate(-50%, -50%);
+            background: #171718;
+            height: 50px;
+            border-radius: 40px;
+            padding: 10px;
+            margin-top: 45px;
+        }
+     
+        .search-box:hover>.search-txt {
+            width: 200px;
+            padding: 0 6px;
+        }
+     
+        .search-btn {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #171718;
+            display: block;
+            margin: auto;
+        }
+     
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0;
+            color: white;
+            font-size: 16px;
+            transition: 0.4s;
+            line-height: 30px;
+            width: 200px;
+        }
+    }
