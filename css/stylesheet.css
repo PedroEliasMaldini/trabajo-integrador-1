@@ -27,9 +27,9 @@ img {
 
 
 /************ f general *********/
-
 /* responsive mobile first */
-/**********+ i header ********/
+
+/****header****/
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,6 @@ img {
     background-color: #2ECC70;
 }
 
-/*mobile header */
 .logo {
     width: 90px;
 }
@@ -51,21 +50,19 @@ img {
 }
 
 .buttons-responsive-menu {
-font-size: 25px;
-color: black;
+    font-size: 25px;
+    color: black;
 }
 
 .buttons-responsive-search {
     font-size: 25px;
     margin-left: 2px;
     color: black;
-    }
+}
 
-/******** f header ********/
 
-/******* i footer ********/
+/*****footer *****/
 
-/* mobile footer*/
 .nav-footer {
     display: none;
 }
@@ -79,51 +76,9 @@ color: black;
     margin-top: 10%;
 }
 
-/*computer footer */
-@media(min-width:1170px) {
-    .nav-footer {
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
 
-    .li-footer {
-        text-decoration: none;
-        border-right: grey solid;
-        padding: 0 70px;
+/****index main *****/
 
-    }
-
-    .nav-footer a {
-        text-decoration: none;
-        color: whitesmoke;
-        padding: 20px;
-        font-weight: bold;
-    }
-
-    footer {
-        margin-left: 5%;
-        margin-right: 5%;
-        border-right: none;
-        border-bottom: none;
-        border-left: none;
-        border-top: grey solid;
-    }
-
-    .nombre-footer {
-        margin-left: 650px;
-        color: grey solid;
-        text-align: right;
-        font-size: 15px;
-        border-top: none;
-    }
-}
-
-/********* f footer *********/
-/******* i index main ********/
-
-/* mobile index*/
 h1 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 15px;
@@ -201,44 +156,7 @@ h1 {
     font-size: 12px;
 }
 
-/*computer index*/
-@media(min-width: 1024px) {
-    h1 {
-        font-size: 100px;
-    }
- 
-    .index-main h2 {
-        letter-spacing: 10px;
-        font-size: 40px;
-    }
- 
-    .watch-item {
-        width: 200px;
-        height: 340px;
-        padding: 10px;
-    }
-    
-    .watch-img {
-        width: 100%;
-    }
-    
-    .watch-item h3 {
-        font-size: 15px;
-        border-bottom: solid 2px whitesmoke;
-    }
-
-    .details {
-        font-size: 15px;
-    }    
-}
-
-
-
-/******* f index main ********/
-
-
-/****** i detail-series y pelis ******/
-/* mobile detail-series y pelis*/
+/****** detail-series y pelis ******/
 .detail {
     max-width: 100%;
     background-color: grey solid;
@@ -313,90 +231,8 @@ h1 {
     font-family: 'Bebas Neue', cursive;
 }
 
-/* tablet y computer detail-series y pelis*/
-@media(min-width: 768px) {
-    .detail {
-        background-color: grey solid;
-        display: flex;
-        flex: wrap;
-        justify-content: space-around;
-        font-size: 15px;
-        font-family: 'Roboto', sans-serif;
-    }
+/****** favoritos *******/
 
-
-    .detail-img {
-        width: 30%;
-        padding: 5px;
-        margin: auto;
-    }
-
-    .detail-img img {
-        width: 100%;
-    }
-
-
-    .detail-text {
-        display: block;
-        width: 60%;
-        font-size: 15px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .detail-text a {
-        font-size: 15px;
-        color: whitesmoke;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .detail-text h2 {
-        font-family: 'Bebas Neue', cursive;
-        color: #2ECC70;
-        letter-spacing: 1.5px;
-        font-size: 60px;
-        margin-bottom: 1%;
-        padding: 0;
-        border-top: solid 2px #2ECC70;
-        border-bottom: solid 2px #2ECC70;
-    }
-
-    .detail-text span {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 20px;
-        letter-spacing: 1.5px;
-    }
-
-    .favoritos {
-        width: 100px;
-        height: 25px;
-        border: none;
-        color: #2bb162;
-        background-color: whitesmoke;
-        border-radius: 4px;
-        box-shadow: inset 0 0 0 0 #2ECC70;
-        transition: ease-out 0.3s;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: 'Bebas Neue', cursive;
-    }
-
-    .favoritos:hover {
-        box-shadow: inset 100px 0 0 0 #2ECC70;
-        cursor: pointer;
-        color: black;
-        font-weight: bold;
-        font-family: 'Bebas Neue', cursive;
-    }
-}
-
-/****** f detail-series y pelis ******/
-
-/******* detail section*******/
-
-
-/******** i favoritos ********/
-
-/*celular y tablet favoritos*/
 .titulo-fav {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
@@ -432,7 +268,6 @@ h1 {
 }
 
 
-
 .watch-item-fav h3 a {
     color: black;
     font-size: 15px;
@@ -440,29 +275,6 @@ h1 {
     font-weight: bolder;
 }
 
-/*computer favoritos*/
-@media (min-width: 1024px) {
-
-    .titulo-fav {
-        font-size: 70px;
-    }
-
-    .watch-item-fav {
-        width: 200px;
-        height: 320px;
-    }
-
-
-    .watch-item-fav h3 a {
-        color: black;
-        font-size: 15px;
-        font-weight: bolder;
-        font-family: 'Roboto', sans-serif;
-    }
-
-}
-
-/******** f favoritos ********/
 
 /**** Pag.Generos ****/
 
@@ -499,66 +311,6 @@ h1 {
 }
 
 /****  generos ****/
-
-@media (min-width: 768px) {
-
-    .titulo-g a {
-        color: white;
-
-    }
-
-    .d-generos p {
-
-        font-size: 13.5px;
-    }
-
-    .hache2-genres {
-
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 5px;
-        font-size: 70px;
-        color: #2bb162;
-        margin: 5%;
-        text-align: start;
-        border-bottom: solid 2px whitesmoke;
-    }
-}
-
-@media (min-width: 1024px) {
-    .detalles-g {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .d-generos {
-        margin-left: 4%;
-        margin-bottom: 5%;
-        max-width: 15%;
-        border: 5px;
-    }
-
-    .titulo-g {
-        background-color: #2bb162;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .peliculas-dispo {
-        color: yellow;
-    }
-
-    .hache2-genres {
-
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 5px;
-        font-size: 70px;
-        color: #2bb162;
-        margin: 5%;
-        text-align: start;
-        border-bottom: solid 2px whitesmoke;
-    }
-
-}
 
 .hache2-genres {
 
@@ -603,7 +355,7 @@ h1 {
     margin-bottom: 130px;
 }
 
-/******* i search-results ********/
+/*****search-results *****/
 
 /*en caso de si encpntrar la bsuqueda */
 .found-search-results .watch-display .watch-item {
@@ -636,7 +388,227 @@ h1 {
     letter-spacing: 3px;
 }
 
-@media (min-width: 1024px) {
+/****************resonsive *********/
+
+/* desde la tablets */
+@media(min-width: 768px) {
+
+    /**** detail movie y series ****/
+    .detail {
+        background-color: grey solid;
+        display: flex;
+        flex: wrap;
+        justify-content: space-around;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .detail-img {
+        width: 30%;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .detail-text {
+        display: block;
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .detail-text a {
+        font-size: 15px;
+    }
+
+    .detail-text h2 {
+        font-size: 60px;
+    }
+
+    .detail-text span {
+        font-size: 20px;
+    }
+
+    .favoritos {
+        width: 100px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    /**** generos ******/
+    .titulo-g a {
+        color: white;
+
+    }
+
+    .d-generos p {
+
+        font-size: 13.5px;
+    }
+
+    .hache2-genres {
+
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        font-size: 70px;
+        color: #2bb162;
+        margin: 5%;
+        text-align: start;
+        border-bottom: solid 2px whitesmoke;
+    }
+}
+
+@media(min-width:1024px) {
+
+    /***** header *******/
+    .buttons-responsive-menu {
+        display: none;
+    }
+
+    .buttons-responsive {
+        color: white;
+    }
+
+    .header li,
+    a {
+        font-size: 15px;
+        color: whitesmoke;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    .nav-header {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-header li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .nav-header li a {
+        color: whitesmoke;
+        font-weight: bold;
+        background-color: #171718;
+        padding: 13px;
+        border-radius: 10px;
+        border: 5px;
+        box-shadow: inset 0 0 0 0 whitesmoke;
+    }
+
+    .nav-header li a:hover {
+        box-shadow: inset 150px 0 0 0 whitesmoke;
+        color: black;
+    }
+
+    /**** footer *******/
+    .nav-footer {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .li-footer {
+        text-decoration: none;
+        border-right: grey solid;
+        padding: 0 70px;
+
+    }
+
+    .nav-footer a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    footer {
+        margin-left: 5%;
+        margin-right: 5%;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        border-top: grey solid;
+    }
+
+    .nombre-footer {
+        margin-left: 650px;
+        font-size: 15px;
+        border-top: none;
+    }
+
+    /***** index *****/
+    h1 {
+        font-size: 100px;
+    }
+
+    .index-main h2 {
+        letter-spacing: 10px;
+        font-size: 40px;
+    }
+
+    .watch-item {
+        width: 200px;
+        height: 340px;
+        padding: 10px;
+    }
+
+    .watch-img {
+        width: 100%;
+    }
+
+    .watch-item h3 {
+        font-size: 15px;
+        border-bottom: solid 2px whitesmoke;
+    }
+
+    .details {
+        font-size: 15px;
+    }
+
+    /****** favoritos ****/
+
+    .titulo-fav {
+        font-size: 70px;
+    }
+
+    .watch-item-fav {
+        width: 200px;
+        height: 320px;
+    }
+
+
+    .watch-item-fav h3 a {
+        color: black;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /****** generos ******/
+
+    .detalles-g {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .d-generos {
+        margin-left: 4%;
+        margin-bottom: 5%;
+        max-width: 15%;
+        border: 5px;
+    }
+
+    .titulo-g {
+        background-color: #2bb162;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .peliculas-dispo {
+        color: yellow;
+    }
+
+    /**** search resualts ****/
     .error-notfound {
         font-size: 20px;
     }
@@ -658,93 +630,46 @@ h1 {
     }
 }
 
-/******* i search-results ********/
 
-/******resonsive *********/
-
-
-
-@media(min-width:1024px) {
-   /***** header *******/
-    .buttons-responsive-menu {
+/* especial- el searchbox del header */
+@media(min-width:1175px) {
+    .buttons-responsive-search {
         display: none;
     }
-    
-        .buttons-responsive {
-            color: white;
-        }
-    
-        .header li,
-        a {
-            font-size: 15px;
-            color: whitesmoke;
-            font-family: 'Bebas Neue', cursive;
-            letter-spacing: 3px;
-        }
-    
-        .nav-header {
-            list-style: none;
-            display: flex;
-        }
-    
-        .nav-header li {
-            display: inline-block;
-            padding: 0px 20px;
-        }
-    
-        .nav-header li a {
-            color: whitesmoke;
-            font-weight: bold;
-            background-color: #171718;
-            padding: 13px;
-            border-radius: 10px;
-            border: 5px;
-            box-shadow: inset 0 0 0 0 whitesmoke;
-        }
-    
-        .nav-header li a:hover {
-            box-shadow: inset 150px 0 0 0 whitesmoke;
-            color: black;
-        }
-    
-         /**** header *******/
+
+    .search-box {
+        display: flex;
+        transform: translate(-50%, -50%);
+        background: #171718;
+        height: 50px;
+        border-radius: 40px;
+        padding: 10px;
+        margin-top: 45px;
     }
-    
-/* especial- el searchbox del header */
-    @media(min-width:1175px) {
-        .search-box {
-            display: flex;
-            transform: translate(-50%, -50%);
-            background: #171718;
-            height: 50px;
-            border-radius: 40px;
-            padding: 10px;
-            margin-top: 45px;
-        }
-     
-        .search-box:hover>.search-txt {
-            width: 200px;
-            padding: 0 6px;
-        }
-     
-        .search-btn {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #171718;
-            display: block;
-            margin: auto;
-        }
-     
-        .search-txt {
-            border: none;
-            background: none;
-            outline: none;
-            padding: 0;
-            color: white;
-            font-size: 16px;
-            transition: 0.4s;
-            line-height: 30px;
-            width: 200px;
-        }
+
+    .search-box:hover>.search-txt {
+        width: 200px;
+        padding: 0 6px;
     }
+
+    .search-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #171718;
+        display: block;
+        margin: auto;
+    }
+
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 30px;
+        width: 200px;
+    }
+}
