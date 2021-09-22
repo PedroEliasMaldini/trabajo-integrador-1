@@ -328,13 +328,14 @@ h1 {
 .titulo-g {
     display: flex;
     justify-content: center;
+    
 }
 
 .titulo-g a {
     color: white;
     border-radius: 10px;
     background-color: #2bb162;
-    padding: 5px 15px;
+    padding: 50px 65px;
 
 }
 
@@ -361,6 +362,13 @@ h1 {
     margin-bottom: 130px;
 }
 
+
+.ul-detail2{
+    display: flex;
+}
+.ul-detail2 li{
+    margin-left: 20px;
+}
 /*****search-results *****/
 
 /*en caso de si encpntrar la bsuqueda */
