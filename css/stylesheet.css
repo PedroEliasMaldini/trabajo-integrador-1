@@ -119,10 +119,9 @@ h1 {
 
 
 
-
 .watch-display {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -327,7 +326,6 @@ h1 {
     margin-bottom: 130px;
 }
 
-
 .ul-detail2{
     display: flex;
 }
@@ -339,10 +337,11 @@ h1 {
     font-family: 'Roboto', sans-serif;;
 }
 
+
 /*****search-results *****/
 
 /*en caso de si encpntrar la bsuqueda */
-.found-search-results, .watch-display, .watch-item {
+.found-search-results .watch-display .watch-item {
     background-color: #33c770;
     width: 200px;
     height: 330px;
@@ -357,7 +356,7 @@ h1 {
     margin: 50px;
     text-align: center;
     font-size: 12px;
-    color: rgb(153, 150, 150);
+    color: rgb(185, 176, 176);
 }
 
 .error-notfound p span {
