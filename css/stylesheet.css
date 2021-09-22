@@ -277,41 +277,6 @@ h1 {
     font-weight: bolder;
 }
 
-
-/**** Pag.Generos ****/
-
-.generos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.genres {
-    background-color: #2bb162;
-    margin: 15px;
-    padding: 10px 60px 10px 60px;
-    font-size: larger;
-    border-radius: 10px;
-}
-
-.genres:hover {
-    transform: translateY(-10px);
-    transition: all ease 0.6s;
-}
-
-.genres-s {
-    background-color: #2bb162;
-    margin: 15px 15px 100px 15px;
-    font-size: larger;
-    padding: 10px 60px 10px 60px;
-    border-radius: 10px;
-}
-
-.genres-s:hover {
-    transform: translateY(-10px);
-    transition: all ease 0.6s;
-}
-
 /****  generos ****/
 
 .hache2-genres {
@@ -369,10 +334,15 @@ h1 {
 .ul-detail2 li{
     margin-left: 20px;
 }
+
+.details-ge {
+    font-family: 'Roboto', sans-serif;;
+}
+
 /*****search-results *****/
 
 /*en caso de si encpntrar la bsuqueda */
-.found-search-results .watch-display .watch-item {
+.found-search-results, .watch-display, .watch-item {
     background-color: #33c770;
     width: 200px;
     height: 330px;
