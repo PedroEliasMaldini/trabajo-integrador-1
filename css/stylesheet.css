@@ -119,10 +119,23 @@ h1 {
 
 
 
-.watch-display {
+.watch-displayPP {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.watch-displaySP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.watch-displayVP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .watch-item {
