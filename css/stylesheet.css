@@ -38,7 +38,7 @@ img {
 }
 
 .logo {
-    width: 90px;
+    width: 60px;
 }
 
 .nav-header {
@@ -62,22 +62,14 @@ img {
 
 /*****footer *****/
 
-.nav-footer {
+footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-footer li{
-    padding: 20px;  
-    color: white;
-    list-style: none;
-    
-    
-
-}
-
-.nav-footer li a{
-    color: white;
-    font-style: none;
+.logoMovieDB {
+    width: 90px;
 }
 
 .nombre-footer {
@@ -531,6 +523,8 @@ h1 {
         font-size: 15px;
        border-top: none;
     }
+
+
 
     /***** index *****/
     h1 {
