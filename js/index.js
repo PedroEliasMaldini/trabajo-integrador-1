@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
                         <img src="${imgUrl+datosPelisPopulares[i].poster_path}" alt= "${datosPelisPopulares[i].title}">
                         </div>
                         <h3>${datosPelisPopulares[i].title}</h3>
-                        <a href="detail-movie.html" class="details"><i class="fas fa-plus"></i></a>
+                        <a href="detail-movie.html?id=${datosPelisPopulares[i].id}" class="details"><i class="fas fa-plus"></i></a>
                     </li>
             `
             }
@@ -69,7 +69,7 @@ window.addEventListener('load', function () {
                         <img src="${imgUrl+datosPeliculasVistas[i].poster_path}" alt= "${datosPeliculasVistas[i].title}">
                         </div>
                         <h3>${datosPeliculasVistas[i].title}</h3>
-                        <a href="detail-movie.html" class="details"><i class="fas fa-plus"></i></a>
+                        <a href="detail-movie.html?id=${datosPeliculasVistas[i].id}" class="details"><i class="fas fa-plus"></i></a>
                     </li>
             `
             }
