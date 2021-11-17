@@ -43,7 +43,7 @@ window.addEventListener('load', function () {
                         <img src="${imgUrl+datosSeriesPopulares[i].poster_path}" alt= "${datosSeriesPopulares[i].name}">
                         </div>
                         <h3>${datosSeriesPopulares[i].name}</h3>
-                        <a href="detail-movie.html" class="details"><i class="fas fa-plus"></i></a>
+                        <a href="detail-serie.html?id=${datosSeriesPopulares[i].id}" class="details"><i class="fas fa-plus"></i></a>
                     </li>
             `
             }

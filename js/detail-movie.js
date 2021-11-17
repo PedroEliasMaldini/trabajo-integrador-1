@@ -1,4 +1,4 @@
-console.log(location.search)
+window.addEventListener('load', function () {
 
 let idPP = new URLSearchParams(location.search);
 
@@ -32,9 +32,11 @@ fetch(urlPP)
             }
             sinopsis.innerText += " " + datos.overview;
             imgPeli.src = imgUrl + datos.poster_path;
-
+            imgPeli.alt = datos.title;
 
         }
 
     )
     .catch()
+
+}) //importante no borrar
