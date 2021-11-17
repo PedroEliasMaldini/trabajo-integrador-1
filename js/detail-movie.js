@@ -31,7 +31,7 @@ fetch(urlPP)
                 genero.innerHTML += `<a href="detail2-genres.html?id=${generoS[i].id}"> ${generoS[i].name} </a>`;
             }
             sinopsis.innerText += " " + datos.overview;
-            imgPeli.src = imgUrl + '1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg';
+            imgPeli.src = imgUrl + datos.poster_path;
 
 
         }
