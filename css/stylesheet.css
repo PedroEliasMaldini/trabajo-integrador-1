@@ -663,3 +663,9 @@ h1 {
         width: 200px;
     }
 }
+
+/* listado de genero de series*/
+.d-generos-series {
+    display: flex;
+    flex-wrap: wrap;
+}
