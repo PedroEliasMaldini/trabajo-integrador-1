@@ -217,14 +217,12 @@ h1 {
     letter-spacing: 1.5px;
 }
 
-.favoritos {
-    width: 80px;
-    height: 20px;
+
+.favoritos span {
     border: none;
     color: #2bb162;
     background-color: whitesmoke;
     border-radius: 4px;
-    margin-top: 3%;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
