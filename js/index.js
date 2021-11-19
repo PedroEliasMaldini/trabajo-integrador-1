@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
 
             for (let i = 0; i < datosPelisPopulares.length; i++) {
                 watchDisplayPP.innerHTML += `
-            <li class="watch-item">
+            <li class="watch-item"> 
                         <div class="watch-img">
                         <img src="${imgUrl+datosPelisPopulares[i].poster_path}" alt= "${datosPelisPopulares[i].title}">
                         </div>

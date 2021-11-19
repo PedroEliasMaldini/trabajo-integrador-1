@@ -18,27 +18,27 @@ let LinksDeGeneros = document.querySelector(`.detalles-g`)
 LinksDeGeneros.innerHTML = `
 
 <article class="d-generos">
-<h3 class="titulo-g"> <a href="${data.genres[0].id}">Acción</a> </h3>
+<h3 class="titulo-g"> <a href="detail2-genres.html?id=28">Acción</a> </h3>
 
 
 </article>
 <article class="d-generos">
-<h3 class="titulo-g"> <a href="${data.genres[1].id}">Aventura</a> </h3>
+<h3 class="titulo-g"> <a href="detail2-genres.html?id=12">Aventura</a> </h3>
 
 
 </article>
 <article class="d-generos">
-<h3 class="titulo-g"> <a href="${data.genres[10].id}">Terror</a> </h3>
+<h3 class="titulo-g"> <a href="detail2-genres.html?id=27">Terror</a> </h3>
 
 
 </article>
 <article class="d-generos">
-<h3 class="titulo-g"> <a href="${data.genres[3].id}">Comedia</a> </h3>
+<h3 class="titulo-g"> <a href="detail2-genres.html?id=35">Comedia</a> </h3>
 
 
 </article>
 <article class="d-generos">
-<h3 class="titulo-g"> <a href="${data.genres[13].id}">Romance</a></h3>
+<h3 class="titulo-g"> <a href="detail2-genres.html?id=10749">Romance</a></h3>
 
 
 </article>
@@ -70,6 +70,43 @@ fetch(UrlDeGenerosSeries)
     console.log(data)
     LinkDeGeneros2.innerHTML = `
     <article class="d-generos" >
+                <h3 class="titulo-g"><a href="detail2-genres.html?id=18">Drama</a></h3>
+
+
+            </article>
+            <article class="d-generos">
+                <h3 class="titulo-g"><a href="detail2-genres.html?id=9648">Misterio</a></h3>
+
+
+            </article>
+            <article class="d-generos">
+                <h3 class="titulo-g"> <a href="detail2-genres.html?id=80">Crimen</a></h3>
+
+
+            </article>
+            <article class="d-generos">
+                <h3 class="titulo-g"> <a href="detail2-genres.html?id=10765">Ficción Histórica</a></h3>
+
+
+            </article>
+            <article class="d-generos">
+                <h3 class="titulo-g"> <a href="detail2-genres.html?id=10764">Thriller</a></h3>
+
+            
+            </article>
+    `
+    
+    
+})
+.catch(function(error){
+    console.log(`Algo que no está bien está mal ${error}`)
+  
+}) // importante no borrar 
+
+
+/*
+LinkDeGeneros2.innerHTML = `
+    <article class="d-generos" >
                 <h3 class="titulo-g"><a href="${data.genres[5].id}">Drama</a></h3>
 
 
@@ -94,12 +131,35 @@ fetch(UrlDeGenerosSeries)
 
             
             </article>
-    `
-    
-    
-})
-.catch(function(error){
-    console.log(`Algo que no está bien está mal ${error}`)
-  
-}) // importante no borrar 
+            `
+
+
+
+            <article class="d-generos">
+<h3 class="titulo-g"> <a href="${data.genres[0].id}">Acción</a> </h3>
+
+
+</article>
+<article class="d-generos">
+<h3 class="titulo-g"> <a href="${data.genres[1].id}">Aventura</a> </h3>
+
+
+</article>
+<article class="d-generos">
+<h3 class="titulo-g"> <a href="${data.genres[10].id}">Terror</a> </h3>
+
+
+</article>
+<article class="d-generos">
+<h3 class="titulo-g"> <a href="${data.genres[3].id}">Comedia</a> </h3>
+
+
+</article>
+<article class="d-generos">
+<h3 class="titulo-g"> <a href="${data.genres[13].id}">Romance</a></h3>
+
+
+</article>
+`
+*/
 
