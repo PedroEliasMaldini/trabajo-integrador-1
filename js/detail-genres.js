@@ -1,5 +1,5 @@
 window.addEventListener ('load', function () {
-<<<<<<< HEAD
+
 
 // peliculas 
 let esteId = new URLSearchParams(location.search);
