@@ -28,7 +28,7 @@ fetch(urlPP)
             duracion.innerText += " " + datos.runtime;
             for (let i = 0; i < datos.genres.length; i++) {
                 let generoS = datos.genres;
-                genero.innerHTML += `<a href="detail2-genres.html?idGeneros=${generoS[i].id}"> ${generoS[i].name} </a>`;
+                genero.innerHTML += `<a href="detail2-genres.html?id=${generoS[i].id}"> ${generoS[i].name} </a>`;
             }
             sinopsis.innerText += " " + datos.overview;
             imgPeli.src = imgUrl + datos.poster_path;
