@@ -20,12 +20,12 @@ fetch(urlSP)
     .then(function (datos) {
             console.log(datos);
             titulo.innerText += " " + datos.name;
-            rating.innerText += " " + datos.vote_average;
+            rating.innerHTML += " " + datos.vote_average;
             for (let i = 0; i < datos.genres.length; i++) {
                 let generoS = datos.genres;
                 genero.innerHTML += `<a href="detail2-genres.html?id=${generoS[i].id}"> ${generoS[i].name} </a>`;
             }
-            sinopsis.innerText += " " + datos.overview;
+            sinopsis.innerHTML += " " + datos.overview;
             
             imgPeli.src = imgUrl + datos.poster_path;
             imgPeli.alt = datos.name;
@@ -55,7 +55,7 @@ fetch(urlSP)
 
     if (favoritosS.includes(seriesPopulares)) {
        //paso 6: se cambia el contenido del link favoritosS 
-       fav.innerHTML = `Quitar de favoritos`; 
+       fav.innerHTML = `<span>Quitar de favoritos </span>`; 
    }
 
    // hasta aca instrucciones para cuando se llega la pagina 
@@ -75,7 +75,7 @@ fetch(urlSP)
            favoritosS.splice(aBorrar, 1);
 
            //y luego cambiamos el contenido del link fav
-           fav.innerHTML = `Agregar a favoritos`;
+           fav.innerHTML = `<span>Agregar a favoritos </span>`;
        }
 
        //si no esta en la lista 
@@ -85,7 +85,7 @@ fetch(urlSP)
            favoritosS.push(seriesPopulares);
 
             //y luego cambiamos el contenido del link fav
-           fav.innerHTML = `Quitar de favoritos`;
+           fav.innerHTML = `<span>Quitar de favoritos </span>`;
        }
        
        //paso 7a: se gurada el array actualizado como string

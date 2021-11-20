@@ -13,14 +13,17 @@ window.addEventListener('load', function () {
             let datosPelisPopulares = datos.results; //array de objetos literales, en donde cada objeto literal represena un pelicula
 
             for (let i = 0; i < datosPelisPopulares.length; i++) {
+                console.log(datosPelisPopulares);
                 watchDisplayPP.innerHTML += `
             <li class="watch-item"> 
                         <div class="watch-img">
+                        <a href="detail-movie.html?id=${datosPelisPopulares[i].id}" class="details">
                         <img src="${imgUrl+datosPelisPopulares[i].poster_path}" alt= "${datosPelisPopulares[i].title}">
+                        </a>
                         </div>
                         <h3>${datosPelisPopulares[i].title}</h3>
-                        <a href="detail-movie.html?id=${datosPelisPopulares[i].id}" class="details"><i class="fas fa-plus"></i></a>
-                    </li>
+                        <h4>${datosPelisPopulares[i].release_date}</h4>
+                        </li>
             `
             }
 
@@ -39,15 +42,18 @@ window.addEventListener('load', function () {
         })
         .then(function (datos) {
             let datosSeriesPopulares = datos.results; //array de objetos literales, en donde cada objeto literal represena un pelicula
+            console.log(datosSeriesPopulares)
             for (let i = 0; i < datosSeriesPopulares.length; i++) {
                 watchDisplaySP.innerHTML += `
             <li class="watch-item">
                         <div class="watch-img">
+                        <a href="detail-serie.html?id=${datosSeriesPopulares[i].id}" class="details">
                         <img src="${imgUrl+datosSeriesPopulares[i].poster_path}" alt= "${datosSeriesPopulares[i].name}">
+                        </a>
                         </div>
-                        <h3>${datosSeriesPopulares[i].name}</h3>
-                        <a href="detail-serie.html?id=${datosSeriesPopulares[i].id}" class="details"><i class="fas fa-plus"></i></a>
-                    </li>
+                       <h3>${datosSeriesPopulares[i].name}</h3>
+                        <h4>${datosSeriesPopulares[i].first_air_date}</h4>
+                        </li>
             `
             }
 
@@ -72,10 +78,12 @@ window.addEventListener('load', function () {
                 watchDisplayVP.innerHTML += `
             <li class="watch-item">
                         <div class="watch-img">
+                        <a href="detail-movie.html?id=${datosPeliculasVistas[i].id}" class="details">
                         <img src="${imgUrl+datosPeliculasVistas[i].poster_path}" alt= "${datosPeliculasVistas[i].title}">
+                        </a>
                         </div>
-                        <h3>${datosPeliculasVistas[i].title}</h3>
-                        <a href="detail-movie.html?id=${datosPeliculasVistas[i].id}" class="details"><i class="fas fa-plus"></i></a>
+                       <h3>${datosPeliculasVistas[i].title}</h3>
+                        <h4>${datosPeliculasVistas[i].release_date}</h4>
                     </li>
             `
             }

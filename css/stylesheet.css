@@ -158,15 +158,21 @@ h1 {
 
 .watch-item h3 {
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
     color: whitesmoke;
-    font-size: 10px;
+    font-size: 16px;
     border-bottom: solid 2px whitesmoke;
     padding-bottom: 2px;
 }
 
-.details {
-    font-size: 12px;
+.watch-item h4 {
+    font-size: 13px;
+    color: whitesmoke;
+    font-weight: bold;
 }
+
+
 
 /****** detail-series y pelis ******/
 .detail {
@@ -176,6 +182,8 @@ h1 {
     padding: 50px 10px 0px 10px;
     margin-right: 10px;
 }
+
+
 
 .detail-img {
     width: 50%;
@@ -193,6 +201,10 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
+.detail-text div {
+margin-top: 19px;
+}
+
 .detail-text a {
     font-size: 10px;
     color: whitesmoke;
@@ -205,7 +217,6 @@ h1 {
     letter-spacing: 1.5px;
     font-size: 40px;
     margin-bottom: 1%;
-    padding: 0;
     border-top: solid 2px #2ECC70;
     border-bottom: solid 2px #2ECC70;
 }
@@ -217,24 +228,17 @@ h1 {
     letter-spacing: 1.5px;
 }
 
-
 .favoritos span {
-    border: none;
-    color: #2bb162;
-    background-color: whitesmoke;
+    border: whitesmoke 2px solid;
+    color: #171718;
+    background-color: #2ECC70;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
+    padding: 3px;
     font-family: 'Bebas Neue', cursive;
 }
 
-.favoritos:hover {
-    transition: ease-out 0.3s;
-    background-color: #2ECC70; 
-    color: black;
-    font-weight: bold;
-    font-family: 'Bebas Neue', cursive;
-}
 
 /****** favoritos *******/
 
@@ -412,11 +416,15 @@ h1 {
         font-size: 20px;
     }
 
-    .favoritos {
+    .favoritos span{
         width: 100px;
         height: 25px;
-        font-size: 20px;
+        font-size: 18px;
     }
+
+    .detail-text div {
+        margin-top: 23px;
+        }
 
     /**** generos ******/
 
@@ -490,7 +498,6 @@ h1 {
     /**** footer *******/
     .nav-footer {
         display: flex;
-        margin-top: 50px;
         justify-content: center;
        
     }
@@ -498,7 +505,6 @@ h1 {
     .li-footer {
         border-right: grey solid;
         padding: 0 70px;
-
     }
 
     .nav-footer a {
@@ -521,6 +527,7 @@ h1 {
        text-align: end;
         font-size: 15px;
        border-top: none;
+       color: grey solid;
     }
 
 
@@ -537,7 +544,7 @@ h1 {
 
     .watch-item {
         width: 200px;
-        height: 340px;
+        height: 365px;
         padding: 10px;
     }
 
@@ -546,12 +553,13 @@ h1 {
     }
 
     .watch-item h3 {
-        font-size: 15px;
+        font-size: 18px;
+        letter-spacing: 1px;
         border-bottom: solid 2px whitesmoke;
     }
 
-    .details {
-        font-size: 15px;
+    .watch-item h4 {
+        font-size: 14px;
     }
 
     /****** favoritos ****/
