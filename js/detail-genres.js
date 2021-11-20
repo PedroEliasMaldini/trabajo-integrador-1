@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
 
 
 
-    fetch(urlDeGenerosPeliculas)
+    fetch(urlDeGenerosPeliculas) //este fetch es lo que creo que esta mal pero no se que 
         .then(function (response) {
             return response.json()
         })

@@ -41,9 +41,8 @@ window.addEventListener('load', function () {
 
         )
 
-        .catch(
-            console.log("error")
-        )
+        .catch()
+        
 
      //favoritos
    
