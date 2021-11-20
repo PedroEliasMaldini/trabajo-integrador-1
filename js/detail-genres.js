@@ -52,4 +52,4 @@ fetch(urlGeneroP)
 
 
 
-})
+}) //no borrar importante
