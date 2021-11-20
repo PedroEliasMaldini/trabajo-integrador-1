@@ -18,41 +18,36 @@ window.addEventListener('load', function () {
             return response.json()
         })
         .then(function (data) {
-            tituloGenero.innerHTML = ` ${data.name}
-             `
-
-            console.log(data)
-
-
+            tituloGenero.innerHTML = ` ${data.name}`;
         })
         .catch()
 
 console.log(urlGeneroP)
 
-        fetch(urlGeneroP)
-        .then(function (respuesta) {
-            return respuesta.json()
-        })
-        .then(function (data) {
-            if (tipoGet = 'movie') {
-                console.log(data)
-                for (let i = 0; i < data.results.length; i++) {
-                    listaDePelis.innerHTML += `<li class="watch-item">
-                    <img src="${imgUrl+data.results[i].poster_path}" alt="${data.results[i].title}" class="watch-img">
-                    <h3> 
-                    <a href="detail-movie.html?id=${data.results[i].id}" class="details-ge"> ${data.results[i].title} </a>
-                    </h3>`};
-            } else { 
-                for (let i = 0; i < data.results.length; i++) {
-                    listaDePelis.innerHTML += `<li class="watch-item">
-                    <img src="${imgUrl+data.results[i].poster_path}" alt="${data.results[i].name}" class="watch-img">
-                    <h3> 
-                    <a href="detail-movie.html?id=${data.results[i].id}" class="details-ge"> ${data.results[i].name} </a>
-                    </h3>`};
-            }
+fetch(urlGeneroP)
+.then(function (respuesta) {
+    return respuesta.json()
+})
+.then(function (data) {
+    if (tipoGet == "movie") {
+        console.log(data)
+        for (let i = 0; i < data.results.length; i++) {
+            listaDePelis.innerHTML += `<li class="watch-item">
+            <img src="${imgUrl+data.results[i].poster_path}" alt="${data.results[i].title}" class="watch-img">
+            <h3> 
+            <a href="detail-movie.html?id=${data.results[i].id}" class="details-ge"> ${data.results[i].title} </a>
+            </h3>`};
+    } else {
+        for (let i = 0; i < data.results.length; i++) {
+            listaDePelis.innerHTML += `<li class="watch-item">
+            <img src="${imgUrl+data.results[i].poster_path}" alt="${data.results[i].name}" class="watch-img">
+            <h3> 
+            <a href="detail-movie.html?id=${data.results[i].id}" class="details-ge"> ${data.results[i].name} </a>
+            </h3>`};
+    }
 
-        })
-        .catch()
+})
+.catch()
 
 
 
