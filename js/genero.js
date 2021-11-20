@@ -2,8 +2,8 @@
 window.addEventListener('load', function () {
 // capturo lo que voy a necesitar para las pelis
 let urlDeGenerosPeliculas = `https://api.themoviedb.org/3/genre/movie/list?api_key=5879ede367a1cc1dbb7ecaf35f419c29`
-let LinksDeGeneros = document.querySelector(`.detalles-g`)
-let LinkDeGeneros2 = document.querySelector(`.d-generos-series`)
+let LinksDeGeneros = document.querySelector(`.detalles-gp`)
+let LinkDeGeneros2 = document.querySelector(`.detalles-gs`)
 let UrlDeGenerosSeries = `https://api.themoviedb.org/3/genre/tv/list?api_key=5879ede367a1cc1dbb7ecaf35f419c29`
 
 

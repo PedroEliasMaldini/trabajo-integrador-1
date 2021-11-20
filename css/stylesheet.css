@@ -282,45 +282,45 @@ h1 {
 
 /****  generos ****/
 
-.hache2-genres {
-
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
-    font-size: 30px;
-    color: #2bb162;
-    margin: 5%;
-    text-align: start;
-    border-bottom: solid 2px whitesmoke;
-}
-
-.titulo-g {
+.detalles-gp {
     display: flex;
-    justify-content: center;
-    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.titulo-g a {
-    color: white;
-    border-radius: 10px;
-    background-color: #2bb162;
-    padding: 50px 65px;
-
-}
-
-.d-generos p {
-    font-size: 12.5px;
-    margin: 15px 10px;
+.detalles-gs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .d-generos {
     display: block;
+    background-color: #2bb162;
+    padding-top: 7px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    width: 40%;
+    height: 40px;
 }
 
-.peliculas-dispo {
-    font-size: 12px;
-    color: rgb(231, 231, 104);
+.tituloGenero {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: #2bb162;
+    margin: 20px;
+    text-align: start;
+    border-bottom: solid 2px whitesmoke;
 }
 
+.titulo-g a{
+    color: white;
+    font-size: 13px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
 
 /**** detalles de generos ***/
 
@@ -419,26 +419,26 @@ h1 {
     }
 
     /**** generos ******/
-    .titulo-g a {
-        color: white;
 
-    }
 
-    .d-generos p {
 
-        font-size: 13.5px;
-    }
+.d-generos {
+    margin: 10px;
+    width: 40%;
+}
 
-    .hache2-genres {
+.tituloGenero {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin: 50px;
+}
 
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 5px;
-        font-size: 70px;
-        color: #2bb162;
-        margin: 5%;
-        text-align: start;
-        border-bottom: solid 2px whitesmoke;
-    }
+.titulo-g a{
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+    
 }
 
 /* desktops */
@@ -572,28 +572,9 @@ h1 {
         font-family: 'Roboto', sans-serif;
     }
 
-    /****** generos ******/
-
-    .detalles-g {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
+    /*** genero****/
     .d-generos {
-        margin-left: 4%;
-        margin-bottom: 5%;
-        max-width: 15%;
-        border: 5px;
-    }
-
-    .titulo-g {
-        background-color: #2bb162;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .peliculas-dispo {
-        color: yellow;
+        width: 20%;
     }
 
     /**** search resualts ****/
