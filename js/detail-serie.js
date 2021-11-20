@@ -34,4 +34,66 @@ fetch(urlSP)
 
     )
     .catch()
+
+    //favoritos para series
+   
+    let fav = document.querySelector('.favoritos')
+    //paso 1: definir array para poner lista de favoritos
+    let favoritosS = [];
+ 
+    //paso 2: recuperamos datos del storage para ver si ya hay favoritos. puede ser q no existe (y es por eso q definimos la variable en el paso 1)
+    let recuperoStorage = localStorage.getItem("favoritosS");
+ 
+    //paso 3: si ya se definio la propiedad favoritosS y ya hay elementos dentro del local storage
+   
+    if (recuperoStorage && recuperoStorage != null) {
+        // paso 4: transformo ese string en array y le asigno al array la vairable favoritosS
+        favoritosS = JSON.parse(recuperoStorage);
+    }
+ 
+    //paso 5: si el ID actual del gif esta en la lista
+
+    if (favoritosS.includes(seriesPopulares)) {
+       //paso 6: se cambia el contenido del link favoritosS 
+       fav.innerHTML = `Quitar de favoritos`; 
+   }
+
+   // hasta aca instrucciones para cuando se llega la pagina 
+   // a partir de ahora, las instrucciones para cuando se clikea el link 
+
+   //evento cuando se clikea el link fav
+   fav.addEventListener("click", function (e) {
+       //evitamos el comportamiento default del link
+       e.preventDefault();
+       //si el gif actual esta en la lista 
+       if (favoritosS.includes(seriesPopulares)) {
+
+           //lo localizamos en el array
+           let aBorrar = favoritosS.indexOf(seriesPopulares);
+
+           //y lo sacamos de alli
+           favoritosS.splice(aBorrar, 1);
+
+           //y luego cambiamos el contenido del link fav
+           fav.innerHTML = `Agregar a favoritos`;
+       }
+
+       //si no esta en la lista 
+       else {
+
+           //se agrega el gif actual
+           favoritosS.push(seriesPopulares);
+
+            //y luego cambiamos el contenido del link fav
+           fav.innerHTML = `Quitar de favoritos`;
+       }
+       
+       //paso 7a: se gurada el array actualizado como string
+       let favStorage = JSON.stringify(favoritosS);
+
+       //paso 7b: se guarda ese string en el local storage 
+       localStorage.setItem("favoritosS",favStorage)
+   })
+
+
 }) //importante no borrar

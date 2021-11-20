@@ -44,26 +44,26 @@ window.addEventListener('load', function () {
         .catch()
         
 
-     //favoritos
+     //favoritos para peliculas
    
      let fav = document.querySelector('.favoritos')
      //paso 1: definir array para poner lista de favoritos
-     let favoritos = [];
+     let favoritosP = [];
   
      //paso 2: recuperamos datos del storage para ver si ya hay favoritos. puede ser q no existe (y es por eso q definimos la variable en el paso 1)
-     let recuperoStorage = localStorage.getItem("favoritos");
+     let recuperoStorage = localStorage.getItem("favoritosP");
   
-     //paso 3: si ya se definio la propiedad favoritos y ya hay elementos dentro del local storage
+     //paso 3: si ya se definio la propiedad favoritosP y ya hay elementos dentro del local storage
     
      if (recuperoStorage && recuperoStorage != null) {
-         // paso 4: transformo ese string en array y le asigno al array la vairable favoritos
-         favoritos = JSON.parse(recuperoStorage);
+         // paso 4: transformo ese string en array y le asigno al array la vairable favoritosP
+         favoritosP = JSON.parse(recuperoStorage);
      }
   
      //paso 5: si el ID actual del gif esta en la lista
 
-     if (favoritos.includes(peliculaPopular)) {
-        //paso 6: se cambia el contenido del link favoritos 
+     if (favoritosP.includes(peliculaPopular)) {
+        //paso 6: se cambia el contenido del link favoritosP 
         fav.innerHTML = `Quitar de favoritos`; 
     }
 
@@ -75,13 +75,13 @@ window.addEventListener('load', function () {
         //evitamos el comportamiento default del link
         e.preventDefault();
         //si el gif actual esta en la lista 
-        if (favoritos.includes(peliculaPopular)) {
+        if (favoritosP.includes(peliculaPopular)) {
 
             //lo localizamos en el array
-            let aBorrar = favoritos.indexOf(peliculaPopular);
+            let aBorrar = favoritosP.indexOf(peliculaPopular);
 
             //y lo sacamos de alli
-            favoritos.splice(aBorrar, 1);
+            favoritosP.splice(aBorrar, 1);
 
             //y luego cambiamos el contenido del link fav
             fav.innerHTML = `Agregar a favoritos`;
@@ -91,17 +91,17 @@ window.addEventListener('load', function () {
         else {
 
             //se agrega el gif actual
-            favoritos.push(peliculaPopular);
+            favoritosP.push(peliculaPopular);
 
              //y luego cambiamos el contenido del link fav
             fav.innerHTML = `Quitar de favoritos`;
         }
         
         //paso 7a: se gurada el array actualizado como string
-        let favStorage = JSON.stringify(favoritos);
+        let favStorage = JSON.stringify(favoritosP);
 
         //paso 7b: se guarda ese string en el local storage 
-        localStorage.setItem("favoritos",favStorage)
+        localStorage.setItem("favoritosP",favStorage)
     })
 
     
