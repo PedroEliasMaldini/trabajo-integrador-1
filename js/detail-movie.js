@@ -98,7 +98,7 @@ window.addEventListener('load', function () {
         }
         
         //paso 7a: se gurada el array actualizado como string
-        let favStorage = JSONstringify(favoritos);
+        let favStorage = JSON.stringify(favoritos);
 
         //paso 7b: se guarda ese string en el local storage 
         localStorage.setItem("favoritos",favStorage)

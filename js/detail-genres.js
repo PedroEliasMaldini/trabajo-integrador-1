@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
     // peliculas 
     let esteId = new URLSearchParams(location.search);
-    let idGet = esteId.get(`id`)
+    let idGet = esteId.get(`idg`)
     let tipoGet = esteId.get(`tipo`)
     console.log(idGet)
     let urlDeGenerosPeliculas = `https://api.themoviedb.org/3/genre/${idGet}?api_key=5879ede367a1cc1dbb7ecaf35f419c29`;

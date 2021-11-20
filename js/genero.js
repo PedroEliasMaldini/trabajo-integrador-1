@@ -19,7 +19,7 @@ fetch(urlDeGenerosPeliculas)
 
         LinksDeGeneros.innerHTML += `
         <article class="d-generos">
-<h3 class="titulo-g"> <a href="detail2-genres.html?id=${data.genres[i].id}&tipo=movie">${data.genres[i].name}</a> </h3>
+<h3 class="titulo-g"> <a href="detail2-genres.html?idg=${data.genres[i].id}&tipo=movie">${data.genres[i].name}</a> </h3>
 </article>
 
         `  
@@ -43,7 +43,7 @@ fetch(UrlDeGenerosSeries)
 
         LinkDeGeneros2.innerHTML += `
         <article class="d-generos">
-<h3 class="titulo-g"> <a href="detail2-genres.html?id=${data.genres[i].id}&tipo=tv">${data.genres[i].name}</a> </h3>
+<h3 class="titulo-g"> <a href="detail2-genres.html?idg=${data.genres[i].id}&tipo=tv">${data.genres[i].name}</a> </h3>
 </article>
 
         `  
