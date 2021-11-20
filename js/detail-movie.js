@@ -22,14 +22,17 @@ window.addEventListener('load', function () {
         })
         .then(function (datos) {
                 console.log(datos);
+
                 titulo.innerText += " " + datos.title;
                 rating.innerText += " " + datos.vote_average;
                 estreno.innerText += " " + datos.release_date;
                 duracion.innerText += " " + datos.runtime;
+
                 for (let i = 0; i < datos.genres.length; i++) {
                     let generoS = datos.genres;
                     genero.innerHTML += `<a href="detail2-genres.html?id=${generoS[i].id}"> ${generoS[i].name} </a>`;
                 }
+                
                 sinopsis.innerText += " " + datos.overview;
                 imgPeli.src = imgUrl + datos.poster_path;
                 imgPeli.alt = datos.title;
@@ -37,8 +40,9 @@ window.addEventListener('load', function () {
             }
 
         )
+
         .catch(
-            console.log(error)
+            console.log("error")
         )
 
      //favoritos
