@@ -9,6 +9,7 @@ const imgUrl = 'https://image.tmdb.org/t/p/w500/'
 
 let titulo = document.querySelector('h2');
 let rating = document.querySelector('.sRating');
+let estreno = document.querySelector('.sEstreno')
 let genero = document.querySelector('.sGenero');
 let sinopsis = document.querySelector('.sSinopsis');
 let imgPeli = document.querySelector('.img-Slector');
@@ -21,6 +22,7 @@ fetch(urlSP)
             console.log(datos);
             titulo.innerText += " " + datos.name;
             rating.innerHTML += " " + datos.vote_average;
+            estreno.innerHTML += " " + datos.first_air_date;
             for (let i = 0; i < datos.genres.length; i++) {
                 let generoS = datos.genres;
                 genero.innerHTML += `<a href="detail2-genres.html?id=${generoS[i].id}"> ${generoS[i].name} </a>`;
@@ -31,7 +33,6 @@ fetch(urlSP)
             imgPeli.alt = datos.name;
 
         }
-
     )
     .catch()
 

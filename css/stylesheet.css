@@ -287,7 +287,7 @@ margin-top: 19px;
 
 
 .watch-item-fav h3 a {
-    color: whitesmoke;
+    color: #4dc980;
     font-family: 'Bebas Neue', cursive;
     font-size: 16px;
     letter-spacing: 2px;
@@ -512,6 +512,7 @@ margin-top: 19px;
 
     /**** footer *******/
 
+
     footer {
         margin-left: 5%;
         margin-right: 5%;
@@ -575,7 +576,7 @@ margin-top: 19px;
 
 
     .watch-item-fav h3 a {
-        color: whitesmoke;
+        color: #4dc980;
         font-size: 17px;
         letter-spacing: 3px;
         font-family: 'Bebas Neue', cursive;
