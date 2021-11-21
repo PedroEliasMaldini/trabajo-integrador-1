@@ -350,7 +350,7 @@ margin-top: 19px;
 .watch-item h3 a{
     color: whitesmoke;
     font-family: 'Bebas Neue', cursive;
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 2px;
     text-align: center;
     font-weight: bolder;
@@ -545,7 +545,7 @@ margin-top: 19px;
 
     .watch-item {
         width: 200px;
-        height: 365px;
+        height: 375px;
         padding: 10px;
     }
 

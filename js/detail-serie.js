@@ -25,7 +25,7 @@ fetch(urlSP)
             estreno.innerHTML += " " + datos.first_air_date;
             for (let i = 0; i < datos.genres.length; i++) {
                 let generoS = datos.genres;
-                genero.innerHTML += `<a href="detail2-genres.html?id=${generoS[i].id}"> ${generoS[i].name} </a>`;
+                genero.innerHTML += `<a href="detail2-genres.html?idg=${generoS[i].id}"> ${generoS[i].name} </a>`;
             }
             sinopsis.innerHTML += " " + datos.overview;
             
