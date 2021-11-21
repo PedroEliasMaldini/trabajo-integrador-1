@@ -20,7 +20,12 @@ window.addEventListener('load', function () {
             return response.json()
         })
         .then(function (data) {
-            tituloGenero.innerHTML = `${data.name}`;
+            if (data.name == undefined) {
+                tituloGenero.innerHTML += `Nombre no definido`;
+            } else {
+                tituloGenero.innerHTML = `${data.name}`;
+            }
+            
         })
         .catch()
 
