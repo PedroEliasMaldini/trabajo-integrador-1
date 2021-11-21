@@ -66,20 +66,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+    border-top: 2px solid #9dffc6;
 }
 
 .logoMovieDB {
-    width: 90px;
+    width: 30px;
 }
 
 .nombre-footer {
     margin-left: 10%;
-    color: grey solid;
+    color: #9dffc6;
     text-align: end;
     font-size: 10px;
     padding: 20px;
-   
-    
 }
 
 
@@ -319,7 +319,7 @@ margin-top: 19px;
     text-align: center;
     margin: 10px;
     width: 40%;
-    height: 40px;
+    height: 50px;
 }
 
 .tituloGenero {
@@ -511,23 +511,6 @@ margin-top: 19px;
     }
 
     /**** footer *******/
-    .nav-footer {
-        display: flex;
-        justify-content: center;
-       
-    }
-
-    .li-footer {
-        border-right: grey solid;
-        padding: 0 70px;
-    }
-
-    .nav-footer a {
-        text-decoration: none;
-        color: whitesmoke;
-        padding: 20px;
-        font-weight: bold;
-    }
 
     footer {
         margin-left: 5%;
@@ -539,13 +522,15 @@ margin-top: 19px;
     }
 
     .nombre-footer {
-       text-align: end;
+        color:rgb(185, 176, 176);
+        text-align: end;
         font-size: 15px;
        border-top: none;
-       color: grey solid;
     }
 
-
+    .logoMovieDB {
+        width: 50px;
+    }
 
     /***** index *****/
     h1 {
