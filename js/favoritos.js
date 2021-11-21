@@ -28,23 +28,6 @@ window.addEventListener('load', function () {
     //vamos a necesitar esto para armar el url de la img
     const imgUrl = 'https://image.tmdb.org/t/p/w500/'
 
-    //si no hay favoritos en la lista 
-
-    if (favoritosP.length == 0) {
-        //muestra la leyenda apropiada si es que no hay favoritos 
-        seccionNoFav.innerHTML += `
-    <h3> No hay favoritos </h3>
-    `
-    } else { //si hay favoritos en el array "favoritosP"
-
-        //buscamos cada uno de los gif y los imprimimos en pantalla (para esto un for)
-        for (let i = 0; i < favoritosP.length; i++) {
-
-            buscarAndMostrarFavoritosP(favoritosP[i]);
-            //para mayor proligidad definimos una funcion, que se ejuctara dentro del bucle for para cada fav (la funcion la definimos despues)
-        }
-
-    }
 
     //definicion de la funcion mostrar los gifs favoritos (se ejecuta dentro del bucle for de mas arriba)
     function buscarAndMostrarFavoritosP(id) {
@@ -64,7 +47,7 @@ window.addEventListener('load', function () {
                         <div class="watch-img-fav">
                             <img src="${imgUrl+datos.poster_path}" alt="${datos.title}" >
                         </div>
-                        <h3> <a href="detail-movie.html" class="fav-name"> ${datos.title} </a></h3>
+                        <h3> <a href="detail-movie.html?id=${datos.id}" class="fav-name"> ${datos.title} </a></h3>
  
                     </li>
         `
@@ -94,23 +77,30 @@ if (localStorage.getItem('favoritosS')) {
 }
 
 
-//si no hay favoritos en la lista 
+//si no hay favoritos (tanto peliculas como series) en la lista 
 
-if (favoritosS.length == 0) {
+if (favoritosP.length == 0 && favoritosS.length == 0) {
     //muestra la leyenda apropiada si es que no hay favoritos 
     seccionNoFav.innerHTML += `
 <h3> No hay favoritos </h3>
 `
-} else { //si hay favoritos en el array "favoritosS"
+} else { //si hay favoritos en el array "favoritosP"
 
     //buscamos cada uno de los gif y los imprimimos en pantalla (para esto un for)
+    for (let i = 0; i < favoritosP.length; i++) {
+
+        buscarAndMostrarFavoritosP(favoritosP[i]);
+        //para mayor proligidad definimos una funcion, que se ejuctara dentro del bucle for para cada fav (la funcion la definimos despues)
+    }
     for (let i = 0; i < favoritosS.length; i++) {
 
         buscarAndMostrarFavoritosS(favoritosS[i]);
         //para mayor proligidad definimos una funcion, que se ejuctara dentro del bucle for para cada fav (la funcion la definimos despues)
     }
 
+
 }
+
 
 //definicion de la funcion mostrar los gifs favoritos (se ejecuta dentro del bucle for de mas arriba)
 function buscarAndMostrarFavoritosS(id) {
@@ -130,13 +120,13 @@ function buscarAndMostrarFavoritosS(id) {
                     <div class="watch-img-fav">
                         <img src="${imgUrl+datos.poster_path}" alt="${datos.name}" >
                     </div>
-                    <h3> <a href="detail-movie.html" class="fav-name"> ${datos.name} </a></h3>
-
+                    <h3> <a href="detail-serie.html?id=${datos.id}" class="fav-name"> ${datos.name} </a></h3>
                 </li>
     `
         })
         .catch()
 }
+
 
 
 }) //no borrar importante
