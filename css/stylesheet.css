@@ -451,9 +451,7 @@ margin-top: 19px;
 }
 
 /* en caso de no encontrar la busqueda */
-.error-search-results {
-    display: none;
-}
+
 
 .error-notfound {
     margin: 50px;
@@ -558,6 +556,10 @@ margin-top: 19px;
 
     }
 
+    .watch-display{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .buttons-responsive {
         color: white;
