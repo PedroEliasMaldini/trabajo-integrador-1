@@ -6,7 +6,7 @@ console.log(querystringObj)
 let resultadoBusqueda = querystringObj.get(`q`)
 console.log(resultadoBusqueda)
 
-let url = 'https://api.themoviedb.org/3/search/?api_key=?api_key=5879ede367a1cc1dbb7ecaf35f419c29&q='+ resultadoBusqueda 
+let url = `https://api.themoviedb.org/3/search/multi/?api_key=5879ede367a1cc1dbb7ecaf35f419c29&language=en-US&query=${resultadoBusqueda}&page=1&include_adult=false` 
 // peliculas
 
 fetch(url)

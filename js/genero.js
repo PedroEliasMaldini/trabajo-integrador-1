@@ -19,7 +19,9 @@ window.addEventListener('load', function () {
                 linksDeGeneros.innerHTML += `
                 <article class="d-generos">
                 <h3 class="titulo-g"> <a href="detail2-genres.html?idg=${data.genres[i].id}&tipo=movie">${data.genres[i].name}</a> </h3>
-                </article>`
+                </article>
+                
+         `
             }
 
         })

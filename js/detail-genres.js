@@ -14,6 +14,8 @@ window.addEventListener('load', function () {
     let urlGeneroP = `https://api.themoviedb.org/3/discover/${tipoGet}?api_key=5879ede367a1cc1dbb7ecaf35f419c29&with_genres=${idGet}`
     let listaDePelis = document.querySelector(`.ul-detail2`) //capturamos el ul donde van a estar las peliculas y series de detalle de genero
  
+
+    
     //hacemos un fetch para cambiar los titulos de las paginas detalle genero
     fetch(urlDeNomGeneros)
         .then(function (response) {
