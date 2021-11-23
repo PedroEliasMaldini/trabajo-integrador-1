@@ -3,8 +3,8 @@ window.addEventListener('load', function () {
     //favoritos de peliculas y series
 
     let seccionFav = document.querySelector(".favoritos-coontenedor");
-    let seccionNoFav = document.querySelector(".no-fav")
-    const imgUrl = 'https://image.tmdb.org/t/p/w500/'
+    let seccionNoFav = document.querySelector(".no-fav");
+    const imgUrl = 'https://image.tmdb.org/t/p/w500/';
 
 
     let favoritosP = [];
@@ -73,7 +73,7 @@ window.addEventListener('load', function () {
                 seccionFav.innerHTML += `
                     <li class="watch-item-fav">
                         <div class="watch-img-fav">
-                            <img src="${imgUrl+datos.poster_path}" alt="${datos.title}" >
+                        <img src="${imgUrl+datos.poster_path}" alt="${datos.title}" >
                         </div>
                         <h3> <a href="detail-movie.html?id=${datos.id}" class="fav-name"> ${datos.title} </a></h3>
  

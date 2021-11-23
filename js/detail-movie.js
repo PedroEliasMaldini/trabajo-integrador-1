@@ -49,40 +49,37 @@ window.addEventListener('load', function () {
     let fav = document.querySelector('.favoritos')
 
     let favoritosP = [];
-   
+
     let recuperoStorage = localStorage.getItem("favoritosP");
 
 
     if (recuperoStorage && recuperoStorage != null) {
-       
+
         favoritosP = JSON.parse(recuperoStorage);
     }
 
-   
+
     if (favoritosP.includes(peliculaPopular)) {
-        
+
         fav.innerHTML = `<span> Quitar de favoritos </span>`;
     }
 
-    
+
     fav.addEventListener("click", function (e) {
-       
+
         e.preventDefault();
-        
+
         if (favoritosP.includes(peliculaPopular)) {
 
             let aBorrar = favoritosP.indexOf(peliculaPopular);
 
             favoritosP.splice(aBorrar, 1);
-            
-            fav.innerHTML = `<span> Agregar a favoritos</span>`;
-        }
 
-       
-        else {
+            fav.innerHTML = `<span> Agregar a favoritos</span>`;
+        } else {
 
             favoritosP.push(peliculaPopular);
-           
+
             fav.innerHTML = `<span>Quitar de favoritos </span>`;
         }
 

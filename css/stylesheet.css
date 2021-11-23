@@ -266,6 +266,8 @@ h1 {
     border-bottom: none;
 }
 
+
+
 .watch-item h4 {
     font-size: 13px;
     color: whitesmoke;
@@ -684,6 +686,11 @@ margin-top: 19px;
     }
 
 
+    .watch-results h3{
+        border-bottom: none;
+    }
+
+    
 
     /****** favoritos ****/
 

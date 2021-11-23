@@ -28,9 +28,9 @@ window.addEventListener('load', function () {
             }
 
         })
-        .catch(function(error){
+        .catch(function (error) {
             console.log(`El error fue ` + error)
-        })  
+        })
 
     //js de series populares 
     let watchDisplaySP = document.querySelector(".watch-displaySP")
@@ -59,9 +59,9 @@ window.addEventListener('load', function () {
 
 
         })
-        .catch(function(error){
+        .catch(function (error) {
             console.log(`El error fue ` + error)
-        })  
+        })
 
     //js de peliculas mas vistas 
 

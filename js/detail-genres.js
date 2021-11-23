@@ -1,21 +1,21 @@
 window.addEventListener('load', function () {
     // peliculas
     let esteId = new URLSearchParams(location.search);
-    let idGet = esteId.get(`idg`)
-    let tipoGet = esteId.get(`tipo`)
+    let idGet = esteId.get(`idg`);
+    let tipoGet = esteId.get(`tipo`);
     console.log(idGet)
-    const imgUrl = 'https://image.tmdb.org/t/p/w500/'
- 
+    const imgUrl = 'https://image.tmdb.org/t/p/w500/';
+
     // este es el endpoint que usamos para el primer fetch
     let urlDeNomGeneros = `https://api.themoviedb.org/3/genre/${idGet}?api_key=5879ede367a1cc1dbb7ecaf35f419c29`;
-    let tituloGenero = document.querySelector(`.titulo-fav`) //capturamos el titulo de detalle genero
- 
-    //este es el endpoint que usamos para el segundo fetch
-    let urlGeneroP = `https://api.themoviedb.org/3/discover/${tipoGet}?api_key=5879ede367a1cc1dbb7ecaf35f419c29&with_genres=${idGet}`
-    let listaDePelis = document.querySelector(`.ul-detail2`) //capturamos el ul donde van a estar las peliculas y series de detalle de genero
- 
+    let tituloGenero = document.querySelector(`.titulo-fav`); //capturamos el titulo de detalle genero
 
-    
+    //este es el endpoint que usamos para el segundo fetch
+    let urlGeneroP = `https://api.themoviedb.org/3/discover/${tipoGet}?api_key=5879ede367a1cc1dbb7ecaf35f419c29&with_genres=${idGet}`;
+    let listaDePelis = document.querySelector(`.ul-detail2`); //capturamos el ul donde van a estar las peliculas y series de detalle de genero
+
+
+
     //hacemos un fetch para cambiar los titulos de las paginas detalle genero
     fetch(urlDeNomGeneros)
         .then(function (response) {
@@ -27,11 +27,11 @@ window.addEventListener('load', function () {
             } else {
                 tituloGenero.innerHTML = `${data.name}`;
             }
-           
+
         })
         .catch()
- 
- 
+
+
     //hacemos un fetch con un if adentro para traer las peliculas y series correspondientes a cada genero
     fetch(urlGeneroP)
         .then(function (respuesta) {
@@ -57,12 +57,12 @@ window.addEventListener('load', function () {
             </h3>`
                 };
             }
- 
-        })
-        .catch()
- 
- 
- 
- 
-}) //no borrar importante
 
+        })
+        .catch(function(error){
+            console.log(`El error fue ` + error)})
+
+
+
+
+}) //no borrar importante

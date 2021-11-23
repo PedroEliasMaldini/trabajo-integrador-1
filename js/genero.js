@@ -1,9 +1,9 @@
 window.addEventListener('load', function () {
     // capturo lo que voy a necesitar para las pelis
-    let urlDeGenerosPeliculas = `https://api.themoviedb.org/3/genre/movie/list?api_key=5879ede367a1cc1dbb7ecaf35f419c29`
-    let linksDeGeneros = document.querySelector(`.detalles-gp`) //section peliculas
-    let linkDeGeneros2 = document.querySelector(`.detalles-gs`) //section series
-    let UrlDeGenerosSeries = `https://api.themoviedb.org/3/genre/tv/list?api_key=5879ede367a1cc1dbb7ecaf35f419c29`
+    let urlDeGenerosPeliculas = `https://api.themoviedb.org/3/genre/movie/list?api_key=5879ede367a1cc1dbb7ecaf35f419c29`;
+    let linksDeGeneros = document.querySelector(`.detalles-gp`); //section peliculas
+    let linkDeGeneros2 = document.querySelector(`.detalles-gs`); //section series
+    let UrlDeGenerosSeries = `https://api.themoviedb.org/3/genre/tv/list?api_key=5879ede367a1cc1dbb7ecaf35f419c29`;
 
 
     //peliculas
