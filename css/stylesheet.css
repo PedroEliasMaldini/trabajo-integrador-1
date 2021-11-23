@@ -129,6 +129,14 @@ background: black;
     display: none;
 }
 
+.titulo-result {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 15px;
+    font-size: 30px;
+    display: block;
+    border-bottom: 2px solid whitesmoke;
+}
+
 .buttons-responsive-menu {
     font-size: 25px;
     color: black;
@@ -139,6 +147,14 @@ background: black;
     color: black;
 }
 
+/***** results *****/
+
+
+.watch-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 /*****footer *****/
 
@@ -244,6 +260,10 @@ h1 {
     font-size: 16px;
     border-bottom: solid 2px whitesmoke;
     padding-bottom: 2px;
+}
+
+.watch-results h3{
+    border-bottom: none;
 }
 
 .watch-item h4 {
@@ -559,7 +579,19 @@ margin-top: 19px;
     .watch-display{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
+
+    .titulo-result {
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 15px;
+        font-size: 43px;
+        display: block;
+        border-bottom: 2px solid whitesmoke;
+        margin-left: 10px;
+    }
+
+
 
     .buttons-responsive {
         color: white;
@@ -650,6 +682,8 @@ margin-top: 19px;
     .watch-item h4 {
         font-size: 14px;
     }
+
+
 
     /****** favoritos ****/
 

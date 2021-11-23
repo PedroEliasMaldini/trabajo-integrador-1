@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
                         <img src="${imgUrl+datosSeriesPopulares[i].poster_path}" alt= "${datosSeriesPopulares[i].name}">
                         </a>
                         </div>
-                       <h3>${datosSeriesPopulares[i].name}</h3>
+                       <h3 class="index-title">${datosSeriesPopulares[i].name}</h3>
                         <h4>${datosSeriesPopulares[i].first_air_date}</h4>
                         </li>
             `
