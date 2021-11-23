@@ -40,7 +40,7 @@ window.addEventListener('load', function () {
 
     if (favoritosP.length == 0 && favoritosS.length == 0) {
 
-        seccionNoFav.innerHTML += `<h3> No hay favoritos </h3>`
+        seccionNoFav.innerHTML = `<h3> No hay favoritos </h3>`
 
     } else { 
 
@@ -79,7 +79,8 @@ window.addEventListener('load', function () {
  
                     </li> `
             })
-            .catch()
+            .catch(function(error){
+                console.log(`El error fue ` + error)})
     }
 
     //series
@@ -101,7 +102,8 @@ window.addEventListener('load', function () {
                     <h3> <a href="detail-serie.html?id=${datos.id}" class="fav-name"> ${datos.name} </a></h3>
                 </li>`
             })
-            .catch()
+            .catch(function(error){
+                console.log(`El error fue ` + error)})
     }
 
 
